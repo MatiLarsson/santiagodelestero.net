@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* Paleta de colores */
 /* Dark */
-/* Dark */
 /* Orange */
 /* Light-blue */
 /* Grey */
@@ -12,48 +11,20 @@
 /* Esquinas redondeadas */
 /* Sombreado de cajas */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-@font-face {
-  font-family: DolceVita;
-  src: url(../../assets/fonts/Dolce.ttf);
-}
-
-@font-face {
-  font-family: Holden;
-  src: url(../../assets/fonts/Holden-Medium-trial.ttf);
-}
-
-@font-face {
-  font-family: NeutralFace;
-  src: url(../../assets/fonts/NeutralFace.ttf);
-}
-
-@font-face {
-  font-family: NeutralFaceBold;
-  src: url(../../assets/fonts/NeutralFace-Bold.otf);
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #252525;
   font-weight: 400;
   font-size: 1rem;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100vw;
-  height: 10vh;
+  width: 100% vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +35,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FFF;
 }
 
 header a {
@@ -90,7 +60,7 @@ header a .logo {
 
 header nav {
   width: 100%;
-  height: 25px;
+  height: 20px;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   background-color: #FF6600;
@@ -120,25 +90,13 @@ header nav ul li {
 }
 
 header nav ul li a {
-  font-family: sans-serif;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   color: #FFF;
 }
 
-header nav ul .active {
-  color: #FF6600;
-  background-color: #FFF;
-  border-radius: 3px;
-  padding: 0rem 1rem;
-}
-
-main {
-  padding-top: 12vh;
-}
-
 footer {
-  width: 100vw;
+  width: 100% vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +118,7 @@ footer .orangeBar {
 footer .footer--container {
   color: #FFF;
   width: 100%;
-  background-color: #111111;
+  background-color: #252525;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,68 +210,8 @@ footer .footer--container .copyright {
 }
 
 footer .footer--container .copyright p {
-  font-family: 'Roboto', sans-serif;
-  color: gray;
+  color: #FFF;
   font-size: 0.8rem;
   margin: 4px 0;
-}
-
-footer .footer--container .copyright p span {
-  color: #FFF;
-  font-size: 1rem;
-  font-family: "DolceVita", sans-serif;
-  padding-left: 5px;
-}
-
-.noticias div h1 {
-  position: absolute;
-  margin: 1rem 0;
-  padding: 0.2rem 1rem;
-  padding-right: 3rem;
-  font-size: 1.6rem;
-  font-family: "Inter", sans-serif;
-  color: #FFF;
-  background: #252525;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(37, 37, 37, 0.85)), color-stop(70%, rgba(37, 37, 37, 0.5)), to(rgba(37, 37, 37, 0)));
-  background: linear-gradient(90deg, rgba(37, 37, 37, 0.85) 0%, rgba(37, 37, 37, 0.5) 70%, rgba(37, 37, 37, 0) 100%);
-}
-
-.noticias .carouselContainer--noticias {
-  width: 100%;
-}
-
-.noticias .carouselContainer--noticias .noticias__carousel .noticia1 {
-  height: 80vh;
-  background-image: url(../../assets/images/santiago-del-estero.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.noticias .carouselContainer--noticias .noticias__carousel .noticia1 div {
-  padding: 0.2rem 1rem;
-  padding-right: 3rem;
-  font-family: "Inter", sans-serif;
-  color: #FFF;
-  background: #252525;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(37, 37, 37, 0.85)), color-stop(70%, rgba(37, 37, 37, 0.5)), to(rgba(37, 37, 37, 0)));
-  background: linear-gradient(90deg, rgba(37, 37, 37, 0.85) 0%, rgba(37, 37, 37, 0.5) 70%, rgba(37, 37, 37, 0) 100%);
-}
-
-.noticias .carouselContainer--noticias .noticias__carousel .noticia1 div h2 {
-  font-size: 1.4rem;
-}
-
-.noticias .carouselContainer--noticias .noticias__carousel .noticia1 div h5 {
-  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

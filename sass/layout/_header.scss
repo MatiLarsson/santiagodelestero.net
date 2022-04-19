@@ -1,40 +1,52 @@
-header{
-    width: 100% vw;
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-5;
+  a {
+    text-decoration: none;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    a{
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 1rem 0;
-        .logo{
-            width: 80%;
-            object-fit: contain;
-        }
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+    .logo {
+      width: 80%;
+      object-fit: contain;
     }
-    nav{
-        width: 100%;
-        height: 20px;
-        box-shadow: $bs-bold;
-        background-color: $color-2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        ul{
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            li{
-                margin: 0 1rem;
-                a{
-                    text-decoration: none;
-                    font-weight: $fw-reg;
-                    color: $color-5;
-                }
-            }
+  }
+  nav {
+    width: 100%;
+    height: 25px;
+    box-shadow: $bs-bold;
+    background-color: $color-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      li {
+        margin: 0 1rem;
+        a {
+          font-family: sans-serif;
+          text-decoration: none;
+          font-weight: $fw-bold;
+          color: $color-5;
         }
+      }
+      .active {
+        color: $color-2;
+        background-color: $color-5;
+        border-radius: 3px;
+        padding: 0rem 1rem;
+      }
     }
+  }
 }
