@@ -1,11 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-h1{
-    font-size: 2em;
-    text-align: center;
-    color: #fff;
-    background: #000;
-    padding: 0.5em;
-}
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'base/reset';
+@import 'base/typography';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/inicio';
+@import 'pages/noticias';
+@import 'pages/turismo';

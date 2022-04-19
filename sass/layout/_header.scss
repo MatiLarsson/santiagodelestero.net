@@ -1,0 +1,40 @@
+header{
+    width: 100% vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 1rem 0;
+        .logo{
+            width: 80%;
+            object-fit: contain;
+        }
+    }
+    nav{
+        width: 100%;
+        height: 20px;
+        box-shadow: $bs-bold;
+        background-color: $color-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            li{
+                margin: 0 1rem;
+                a{
+                    text-decoration: none;
+                    font-weight: $fw-reg;
+                    color: $color-5;
+                }
+            }
+        }
+    }
+}
