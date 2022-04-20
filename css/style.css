@@ -457,6 +457,28 @@ footer .footer--container .copyright p span {
   margin: 1rem 0;
 }
 
+.tituloTurismo {
+  width: 100vw;
+  min-height: 6vh;
+  background-color: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tituloTurismo h2 {
+  color: #FFF;
+  font-family: 'Holden';
+}
+
 .leftButton {
   position: absolute;
   top: 50%;
@@ -507,27 +529,6 @@ footer .footer--container .copyright p span {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-
-.tituloTurismo {
-  width: 100vw;
-  min-height: 6vh;
-  background-color: #252525;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-}
-
-.tituloTurismo h2 {
-  color: #FFF;
-  font-family: 'Holden';
 }
 
 .cardTurismo {
