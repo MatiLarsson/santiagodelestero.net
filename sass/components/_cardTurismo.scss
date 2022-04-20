@@ -1,0 +1,22 @@
+.cardTurismo {
+  width: 90vw;
+  min-height: 50vh;
+  margin: 2rem auto;
+  border-radius: $br-5;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  img {
+    width: 100%;
+    border-radius: $br-5 $br-5 0 0;
+  }
+  div {
+    h3 {
+      font-family: "Neutraface", sans-serif;
+      margin: 0.5rem 1rem;
+    }
+    p {
+      padding: 0.5rem 1rem;
+      font-family: "Roboto", sans-serif;
+      font-size: $fs-md;
+    }
+  }
+}

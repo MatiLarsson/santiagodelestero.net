@@ -1,0 +1,13 @@
+.tituloTurismo{
+            width: 100vw;
+            min-height: 6vh;
+            background-color: $color-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: $bs-bold;
+            h2{
+                color: $color-5;
+                font-family: 'Holden';
+            }
+        }
