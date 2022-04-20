@@ -1,0 +1,54 @@
+.noticias {
+  div {
+    h1 {
+      position: absolute;
+      margin: 1rem 0;
+      padding: 0.2rem 1rem;
+      padding-right: 3rem;
+      font-size: $fs-xl;
+      font-family: "Inter", sans-serif;
+      color: $color-5;
+      background: rgb(37, 37, 37);
+      background: linear-gradient(
+        90deg,
+        rgba(37, 37, 37, 0.85) 0%,
+        rgba(37, 37, 37, 0.5) 70%,
+        rgba(37, 37, 37, 0) 100%
+      );
+    }
+  }
+  .carouselContainer--noticias {
+    width: 100%;
+    .noticias__carousel {
+      .noticia1 {
+        height: 80vh;
+        background-image: url(../../assets/images/santiago-del-estero.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        div {
+          padding: 0.2rem 1rem;
+          padding-right: 3rem;
+          font-family: "Inter", sans-serif;
+          color: $color-5;
+          background: rgb(37, 37, 37);
+          background: linear-gradient(
+            90deg,
+            rgba(37, 37, 37, 0.85) 0%,
+            rgba(37, 37, 37, 0.5) 70%,
+            rgba(37, 37, 37, 0) 100%
+          );
+          h2{
+              font-size: $fs-lg;
+          }
+          h5{
+                font-size: $fs-md;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-body{
-	font-family: 'Montserrat', sans-serif;
-	color: $color-1;
-	font-weight: $fw-reg;
-	font-size: $fs-md;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+@font-face {
+  font-family: DolceVita;
+  src: url(../../assets/fonts/Dolce.ttf);
+}
+
+@font-face {
+  font-family: Holden;
+  src: url(../../assets/fonts/Holden-Medium-trial.ttf);
+}
+
+@font-face {
+  font-family: NeutralFace;
+  src: url(../../assets/fonts/NeutralFace.ttf);
+}
+
+@font-face {
+  font-family: NeutralFaceBold;
+  src: url(../../assets/fonts/NeutralFace-Bold.otf);
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: $color-1;
+  font-weight: $fw-reg;
+  font-size: $fs-md;
 }
