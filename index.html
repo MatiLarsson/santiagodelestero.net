@@ -26,18 +26,20 @@
         <section class="noticias">
             <div>
                 <h1>
-                    Últimas noticias
+                    Destacados
                 </h1>
             </div>
             <div class="carouselContainer--noticias">
-                <div class="noticias__leftButton"></div>
+                <div id="noticias__leftButton" class="leftButton">
+                    <img src="assets/icons/caret-left-solid.svg" alt="left arrow">
+                </div>
                 <div class="noticias__carousel">
                     <article class="noticia1">
                         <div>
                             <h2>
-                                Título de la noticia 1
+                                Termas de Río Hondo
                             </h2>
-                            <p>Breve descripción de la noticia 1</p>
+                            <p>Donde el agua termal "brota de las canillas"</p>
                         </div>
                     </article>
                     <!-- <article class="noticia2">
@@ -57,40 +59,51 @@
                         </div>
                     </article>
                 </div> -->
-                <div class="noticias__rightButton"></div>
+                <div id="noticias__rightButton" class="rightButton">
+                    <img src="assets/icons/caret-right-solid.svg" alt="right arrow">
+                </div>
             </div>
-            <button>Más noticias</button>
+            <p class="buttonContainer"><a href="/" class="verMasButton">ver más</a></p>
         </section>
         <section class="instagram">
-            <div>
+            <div class="instagramLink">
                 <p>SEGUINOS EN</p>
-                <a href="">@SGODELESTERONET</a>
+                <p><a href="">@SGODELESTERONET</a></p>
             </div>
             <div class="instagramFeed">
-                Publicaciones de instagram - dos fotos a lo ancho x 4 a lo largo
+                <div class="imgContainer"><a href="/"><img src=""/></a></div>
+                <div class="imgContainer"><a href="/"><img src=""/></a></div>
+                <div class="imgContainer"><a href="/"><img src=""/></a></div>
+                <div class="imgContainer"><a href="/"><img src=""/></a></div>
+                <div class="imgContainer"><a href="/"><img src=""/></a></div>
+                <div class="imgContainer"><a href="/"><img src=""/></a></div>
+                <div class="imgContainer"><a href="/"><img src=""/></a></div>
+                <div class="imgContainer"><a href="/"><img src=""/></a></div>
             </div>
         </section>
         <section class="queHacer">
-            <h1>QUE HACER EN SANTIAGO</h1>
+            <h2>QUE HACER EN</h2>
+            <h1>SANTIAGO</h1>
             <div class="carouselContainer--queHacer">
-                <div class="queHacer__leftButton"></div>
+                <div id="queHacer__leftButton" class="leftButton">
+                    <img src="assets/icons/caret-left-solid.svg" alt="left arrow">
+                </div>
                 <div class="queHacer__carousel">
-                    <article>
-                        <img src="" alt="">
+                    <article class="queHacerCard">
+                        <img src="/assets/images/estadio.jpg" alt="estadio único madre de ciudades">
                         <div>
-                            <h2>
-                                Título de la actividad 1
-                            </h2>
-                            <a href="">ver más</a>
+                            <p>
+                                ESTADIO ÚNICO<br/>MADRE DE CIUDADES
+                            </p>
+                            <p class="buttonContainer"><a href="/" class="verMasButton">ver más</a></p>
                         </div>
                     </article>
-                    <article>
+                    <!-- <article>
                         <img src="" alt="">
                         <div>
                             <h2>
                                 Título de la actividad 2
                             </h2>
-                            <a href="">ver más</a>
                         </div>
                     </article>
                     <article>
@@ -99,11 +112,12 @@
                             <h2>
                                 Título de la actividad 3
                             </h2>
-                            <a href="">ver más</a>
                         </div>
-                    </article>
+                    </article> -->
                 </div>
-                <div class="queHacer__rightButton"></div>
+                <div id="queHacer__rightButton" class="rightButton">
+                    <img src="assets/icons/caret-right-solid.svg" alt="right arrow">
+                </div>
             </div>
         </section>
     </main>

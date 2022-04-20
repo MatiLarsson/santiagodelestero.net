@@ -1,4 +1,5 @@
 .noticias {
+  width: 100%;
   div {
     h1 {
       position: absolute;
@@ -8,41 +9,29 @@
       font-size: $fs-xl;
       font-family: "Inter", sans-serif;
       color: $color-5;
-      background: rgb(37, 37, 37);
-      background: linear-gradient(
-        90deg,
-        rgba(37, 37, 37, 0.85) 0%,
-        rgba(37, 37, 37, 0.5) 70%,
-        rgba(37, 37, 37, 0) 100%
-      );
+      background: $grad-1;
     }
   }
+
   .carouselContainer--noticias {
-    width: 100%;
     .noticias__carousel {
       .noticia1 {
         height: 80vh;
         width: 100vw;
-        background-image: url(../../assets/images/santiago-del-estero.png);
+        background-image: url(../../assets/images/termas.jpg);
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         align-items: flex-end;
         justify-content: flex-start;
-        box-shadow: 0px 3px 8px #C4C4C4;
+        box-shadow: $bs-bold;
         div {
           padding: 0.2rem 1rem;
           padding-right: 3rem;
           font-family: "Inter", sans-serif;
           color: $color-5;
-          background: rgb(37, 37, 37);
-          background: linear-gradient(
-            90deg,
-            rgba(37, 37, 37, 0.85) 0%,
-            rgba(37, 37, 37, 0.5) 70%,
-            rgba(37, 37, 37, 0) 100%
-          );
+          background: $grad-1;
           h2 {
             font-weight: 600;
             font-size: $fs-lg;
@@ -50,6 +39,98 @@
           p {
             font-size: $fs-sm;
             font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .buttonContainer {
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+  }
+}
+
+.instagram{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .instagramLink{
+    p{
+      text-align: center;
+      font-family: "Inter", sans-serif;
+      font-size: $fs-lg;
+      color: $color-0;
+      a{
+        text-decoration: none;
+        font-size: $fs-md;
+        color: $color-2;
+      }
+    }
+  }
+  .instagramFeed{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    .imgContainer{
+      background-color: $color-3;
+      width: 120px;
+      height: 120px;
+      img{
+        object-fit: cover;
+      }
+    }
+  }
+}
+.queHacer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-1;
+  h2{
+    margin-top: 1rem;
+    color: $color-5;
+    font-size: $fs-xl;
+    font-family: "Inter", sans-serif;
+    font-weight: $fw-reg;
+  }
+  h1{
+    margin-top: 1rem;
+    color: $color-2;
+    font-size: $fs-xl;
+    font-family: "Inter", sans-serif;
+    font-weight: $fw-bold;
+  }
+  .carouselContainer--queHacer{
+    position: relative;
+    width: 100%;
+    margin: 1.5rem 0 4rem 0;
+    .queHacer__carousel{
+      width: 70%;
+      margin: auto;
+      article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+          background-color: $color-3;
+        }
+        div{
+          width: 100%;
+          background-color: $color-5;
+          p{
+            font-family: "Inter", sans-serif;
+            color: $color-2;
+            font-size: $fs-md;
+            font-weight: $fw-bold;
+            text-align: center;
+            margin: 1rem 0;
           }
         }
       }
