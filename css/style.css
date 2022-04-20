@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: Holden;
-  src: url(../../assets/fonts/Holden-Medium-trial.ttf);
+  src: url(../../assets/fonts/Holden-Light-Italic-trial.ttf);
 }
 
 @font-face {
@@ -138,6 +138,10 @@ header nav ul .active {
 main {
   padding-top: 12vh;
   width: 100vw;
+}
+
+.mainTurismo {
+  padding-top: 17vh;
 }
 
 footer {
@@ -503,5 +507,51 @@ footer .footer--container .copyright p span {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+
+.tituloTurismo {
+  width: 100vw;
+  min-height: 6vh;
+  background-color: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tituloTurismo h2 {
+  color: #FFF;
+  font-family: 'Holden';
+}
+
+.cardTurismo {
+  width: 90vw;
+  min-height: 50vh;
+  margin: 2rem auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cardTurismo img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.cardTurismo div h3 {
+  font-family: "Neutraface", sans-serif;
+  margin: 0.5rem 1rem;
+}
+
+.cardTurismo div p {
+  padding: 0.5rem 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
