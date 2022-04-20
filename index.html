@@ -7,19 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago del Estero</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
 </head>
 
 <body>
     <header>
-        <a href="./index.html">
+        <a href="/">
             <img class="logo" src="assets/logos/santiago-del-estero/Logo-horizontal.png"
                 alt="logo de santiago del estero punto net">
         </a>
         <nav>
             <ul>
-                <li><a href="./index.html" class="active">INICIO</a></li>
-                <li><a href="/pages/turismo_queVisitar.html">TURISMO</a></li>
+                <li><a href="/" class="active">INICIO</a></li>
+                <li><a id="turismo-dropdown-btn">TURISMO</a></li>
             </ul>
+            <div id="turismo-dropdown">
+                <ul>
+                    <li><a href="./pages/turismo_queHacer.html">Que hacer</a></li>
+                    <hr color="white">
+                    <li><a href="./pages/turismo_queVisitar.html">Que visitar</a></li>
+                    <hr color="white">
+                    <li><a href="./pages/turismo_gastronomia.html">Gastronomia</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -59,31 +69,24 @@
                         </div>
                     </article>
                 </div> -->
-                <div id="noticias__rightButton" class="rightButton">
-                    <img src="assets/icons/caret-right-solid.svg" alt="right arrow">
+                    <div id="noticias__rightButton" class="rightButton">
+                        <img src="assets/icons/caret-right-solid.svg" alt="right arrow">
+                    </div>
                 </div>
-            </div>
-            <p class="buttonContainer"><a href="/" class="verMasButton">ver más</a></p>
+                <p class="buttonContainer"><a href="/" class="verMasButton">ver más</a></p>
         </section>
         <section class="instagram">
             <div class="instagramLink">
                 <p>SEGUINOS EN</p>
-                <p><a href="">@SGODELESTERONET</a></p>
+                <p><a href="https://www.instagram.com/sgodelesteronet" target="_blank">@SGODELESTERONET</a></p>
             </div>
-            <div class="instagramFeed">
-                <div class="imgContainer"><a href="/"><img src=""/></a></div>
-                <div class="imgContainer"><a href="/"><img src=""/></a></div>
-                <div class="imgContainer"><a href="/"><img src=""/></a></div>
-                <div class="imgContainer"><a href="/"><img src=""/></a></div>
-                <div class="imgContainer"><a href="/"><img src=""/></a></div>
-                <div class="imgContainer"><a href="/"><img src=""/></a></div>
-                <div class="imgContainer"><a href="/"><img src=""/></a></div>
-                <div class="imgContainer"><a href="/"><img src=""/></a></div>
-            </div>
+
+            <iframe src="https://snapwidget.com/embed/993760" class="snapwidget-widget" allowtransparency="true"
+                frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:70vw; "></iframe>
         </section>
         <section class="queHacer">
-            <h2>QUE HACER EN</h2>
-            <h1>SANTIAGO</h1>
+            <h3>QUE HACER EN</h3>
+            <h2>SANTIAGO</h2>
             <div class="carouselContainer--queHacer">
                 <div id="queHacer__leftButton" class="leftButton">
                     <img src="assets/icons/caret-left-solid.svg" alt="left arrow">
@@ -93,7 +96,7 @@
                         <img src="/assets/images/estadio.jpg" alt="estadio único madre de ciudades">
                         <div>
                             <p>
-                                ESTADIO ÚNICO<br/>MADRE DE CIUDADES
+                                ESTADIO ÚNICO<br />MADRE DE CIUDADES
                             </p>
                             <p class="buttonContainer"><a href="/" class="verMasButton">ver más</a></p>
                         </div>
@@ -126,26 +129,26 @@
         </div>
         <div class="footer--container">
             <div class="socialMediaIconsList">
-                <a href="">
-                    <img class="socialMediaIcon" src="assets/logos/social-media/instagram.svg" alt="">
+                <a href="https://www.instagram.com/sgodelesteronet" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/instagram.svg" alt="instagramLogo">
                 </a>
-                <a href="">
-                    <img class="socialMediaIcon" src="assets/logos/social-media/facebook.svg" alt="">
+                <a href="https://www.facebook.com/SantiagodelEstero" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/facebook.svg" alt="facebookLogo">
                 </a>
-                <a href="">
-                    <img class="socialMediaIcon" src="assets/logos/social-media/twitter.svg" alt="">
+                <a href="https://twitter.com/sgodelesteronet" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/twitter.svg" alt="twitterLogo">
                 </a>
-                <a href="">
-                    <img class="socialMediaIcon" src="assets/logos/social-media/youtube.svg" alt="">
+                <a href="https://www.youtube.com/c/santiagodelesteronet" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/youtube.svg" alt="youtubeLogo">
                 </a>
-                <a href="">
-                    <img class="socialMediaIcon" src="assets/logos/social-media/spotify.svg" alt="">
+                <a href="https://open.spotify.com/episode/6Q7TtD7Cv8E7KJS5TSjkAV?si=ctDK8sXRR4yRzM09GwsrHg&utm_source=&nd=1" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/spotify.svg" alt="spotifyLogo">
                 </a>
-                <a href="">
-                    <img class="socialMediaIcon" src="assets/logos/social-media/tiktok.svg" alt="">
+                <a href="https://www.tiktok.com/@sdenet?lang=es" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/tiktok.svg" alt="tiktokLogo">
                 </a>
-                <a href="">
-                    <img class="socialMediaIcon" src="assets/logos/social-media/whatsapp.svg" alt="">
+                <a href="https://api.whatsapp.com/send/?phone=3856190007&text&app_absent=0" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/whatsapp.svg" alt="whatsappLogo">
                 </a>
             </div>
             <div>LINKS DE INTERÉS</div>
