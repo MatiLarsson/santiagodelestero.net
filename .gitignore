@@ -3,6 +3,7 @@
 *.css.map
 *.sass.map
 *.scss.map
+*.css
 
 # Windows thumbnail cache files
 Thumbs.db
