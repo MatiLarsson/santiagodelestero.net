@@ -16,7 +16,7 @@
   .carouselContainer--noticias {
     .noticias__carousel {
       .noticia1 {
-        height: 80vh;
+        height: 78vh;
         width: 100vw;
         background-image: url(../../assets/images/termas.jpg);
         background-position: left;
@@ -68,19 +68,8 @@
       }
     }
   }
-  .instagramFeed{
-    margin: 2rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    .imgContainer{
-      background-color: $color-3;
-      width: 120px;
-      height: 120px;
-      img{
-        object-fit: cover;
-      }
-    }
+  iframe{
+    margin: 1rem 0;
   }
 }
 .queHacer{
@@ -89,17 +78,16 @@
   flex-direction: column;
   align-items: center;
   background-color: $color-1;
-  h2{
+  h3{
     margin-top: 1rem;
     color: $color-5;
-    font-size: $fs-xl;
+    font-size: $fs-md;
     font-family: "Inter", sans-serif;
     font-weight: $fw-reg;
   }
-  h1{
-    margin-top: 1rem;
+  h2{
     color: $color-2;
-    font-size: $fs-xl;
+    font-size: $fs-lg;
     font-family: "Inter", sans-serif;
     font-weight: $fw-bold;
   }
