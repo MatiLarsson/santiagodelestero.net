@@ -182,6 +182,7 @@ header nav .show {
 
 main {
   padding-top: 12vh;
+  width: 100vw;
 }
 
 .mainTurismo {
@@ -316,6 +317,10 @@ footer .footer--container .copyright p span {
   padding-left: 5px;
 }
 
+.noticias {
+  width: 100%;
+}
+
 .noticias div h1 {
   position: absolute;
   margin: 1rem 0;
@@ -324,19 +329,14 @@ footer .footer--container .copyright p span {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
   color: #FFF;
-  background: #252525;
   background: -webkit-gradient(linear, left top, right top, from(rgba(37, 37, 37, 0.85)), color-stop(70%, rgba(37, 37, 37, 0.5)), to(rgba(37, 37, 37, 0)));
   background: linear-gradient(90deg, rgba(37, 37, 37, 0.85) 0%, rgba(37, 37, 37, 0.5) 70%, rgba(37, 37, 37, 0) 100%);
-}
-
-.noticias .carouselContainer--noticias {
-  width: 100%;
 }
 
 .noticias .carouselContainer--noticias .noticias__carousel .noticia1 {
   height: 80vh;
   width: 100vw;
-  background-image: url(../../assets/images/santiago-del-estero.png);
+  background-image: url(../../assets/images/termas.jpg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -349,8 +349,8 @@ footer .footer--container .copyright p span {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-shadow: 0px 3px 8px #C4C4C4;
-          box-shadow: 0px 3px 8px #C4C4C4;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .noticias .carouselContainer--noticias .noticias__carousel .noticia1 div {
@@ -358,7 +358,6 @@ footer .footer--container .copyright p span {
   padding-right: 3rem;
   font-family: "Inter", sans-serif;
   color: #FFF;
-  background: #252525;
   background: -webkit-gradient(linear, left top, right top, from(rgba(37, 37, 37, 0.85)), color-stop(70%, rgba(37, 37, 37, 0.5)), to(rgba(37, 37, 37, 0)));
   background: linear-gradient(90deg, rgba(37, 37, 37, 0.85) 0%, rgba(37, 37, 37, 0.5) 70%, rgba(37, 37, 37, 0) 100%);
 }
@@ -371,6 +370,136 @@ footer .footer--container .copyright p span {
 .noticias .carouselContainer--noticias .noticias__carousel .noticia1 div p {
   font-size: 0.8rem;
   font-weight: 400;
+}
+
+.noticias .buttonContainer {
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+}
+
+.instagram {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instagram .instagramLink p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  color: #111111;
+}
+
+.instagram .instagramLink p a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #FF6600;
+}
+
+.instagram .instagramFeed {
+  margin: 2rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.instagram .instagramFeed .imgContainer {
+  background-color: #09F;
+  width: 120px;
+  height: 120px;
+}
+
+.instagram .instagramFeed .imgContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.queHacer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #252525;
+}
+
+.queHacer h2 {
+  margin-top: 1rem;
+  color: #FFF;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.queHacer h1 {
+  margin-top: 1rem;
+  color: #FF6600;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.queHacer .carouselContainer--queHacer {
+  position: relative;
+  width: 100%;
+  margin: 1.5rem 0 4rem 0;
+}
+
+.queHacer .carouselContainer--queHacer .queHacer__carousel {
+  width: 70%;
+  margin: auto;
+}
+
+.queHacer .carouselContainer--queHacer .queHacer__carousel article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.queHacer .carouselContainer--queHacer .queHacer__carousel article img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #09F;
+}
+
+.queHacer .carouselContainer--queHacer .queHacer__carousel article div {
+  width: 100%;
+  background-color: #FFF;
+}
+
+.queHacer .carouselContainer--queHacer .queHacer__carousel article div p {
+  font-family: "Inter", sans-serif;
+  color: #FF6600;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 .tituloTurismo {
@@ -394,6 +523,58 @@ footer .footer--container .copyright p span {
   font-size: 1.6rem;
   color: #FFF;
   font-family: 'Holden';
+}
+
+.leftButton {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%) translateX(20%);
+          transform: translateY(-50%) translateX(20%);
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.leftButton img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
+          filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
+  opacity: 70%;
+}
+
+.rightButton {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%) translateX(-20%);
+          transform: translateY(-50%) translateX(-20%);
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.rightButton img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
+          filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
+  opacity: 70%;
+}
+
+.verMasButton {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #FFF;
+  background-color: #FF6600;
+  border-radius: 5px;
+  padding: 3px 20px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .cardTurismo {
