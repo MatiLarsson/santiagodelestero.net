@@ -9,6 +9,7 @@ header {
   background-color: $color-5;
   box-shadow: $bs-bold;
   a {
+    cursor: pointer;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -36,6 +37,7 @@ header {
       li {
         margin: 0 1rem;
         a {
+          cursor: pointer;
           font-family: sans-serif;
           text-decoration: none;
           font-weight: $fw-bold;
