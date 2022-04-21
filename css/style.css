@@ -586,6 +586,7 @@ footer .footer--container .copyright p span {
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
+  border: none;
 }
 
 .rightButton img {
@@ -660,7 +661,34 @@ footer .footer--container .copyright p span {
 .cardTurismo div p {
   padding: 0.5rem 1rem;
   font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+}
+
+.cardTurismo div button {
+  border: none;
+  background-color: #FF6600;
   font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.cardTurismo div button:hover {
+  background-color: orangered;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.cardTurismo div button:active {
+  background-color: red;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.cardTurismo div button a {
+  color: white;
+  text-decoration: none;
 }
 
 /* Botones de carouseles */
@@ -674,6 +702,7 @@ footer .footer--container .copyright p span {
   border-radius: 5px;
   padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.1);
+  background: none;
 }
 
 .carousel-button img {
