@@ -1,0 +1,25 @@
+.mainLugares{
+    padding-bottom: 5vh;
+    img{
+        width: 100vw;
+    }
+    h4{
+        font-size: $fs-lg;
+        padding: 1rem;
+        font-family: 'inter', sans-serif;
+        font-weight: $fw-bold;
+    }
+    p{
+        padding: 0.2rem 1rem;
+        font-family: 'inter', sans-serif;
+        font-size: $fs-sm;
+        span{
+            font-weight: $fw-bold;
+        }
+    }
+    h5{
+        font-size: $fs-md;
+        padding: 0.5rem 1rem;
+        font-family: 'inter', sans-serif;
+    }
+}

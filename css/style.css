@@ -69,6 +69,7 @@ header {
 }
 
 header a {
+  cursor: pointer;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,6 +126,7 @@ header nav ul li {
 }
 
 header nav ul li a {
+  cursor: pointer;
   font-family: sans-serif;
   text-decoration: none;
   font-weight: 700;
@@ -185,8 +187,8 @@ main {
   width: 100vw;
 }
 
-.mainTurismo {
-  padding-top: 17vh;
+.mainTurismo, .mainLugares {
+  padding-top: 18.5vh;
 }
 
 footer {
@@ -373,8 +375,13 @@ footer .footer--container .copyright p span {
 }
 
 .noticias .buttonContainer {
-  margin: 1rem 0 2rem 0;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: .5rem 0 2rem 0;
 }
 
 .instagram {
@@ -508,6 +515,37 @@ footer .footer--container .copyright p span {
   font-family: 'Holden';
 }
 
+.mainLugares {
+  padding-bottom: 5vh;
+}
+
+.mainLugares img {
+  width: 100vw;
+}
+
+.mainLugares h4 {
+  font-size: 1.4rem;
+  padding: 1rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+}
+
+.mainLugares p {
+  padding: 0.2rem 1rem;
+  font-family: 'inter', sans-serif;
+  font-size: 0.8rem;
+}
+
+.mainLugares p span {
+  font-weight: 700;
+}
+
+.mainLugares h5 {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-family: 'inter', sans-serif;
+}
+
 .leftButton {
   position: absolute;
   top: 50%;
@@ -547,17 +585,30 @@ footer .footer--container .copyright p span {
 }
 
 .verMasButton {
-  text-decoration: none;
-  font-size: 1.4rem;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
-  color: #FFF;
+  border: none;
   background-color: #FF6600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  padding: 3px 20px;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
   cursor: pointer;
+}
+
+.verMasButton:hover {
+  background-color: orangered;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.verMasButton:active {
+  background-color: red;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.verMasButton a {
+  text-decoration: none;
+  color: #FFF;
 }
 
 .cardTurismo {
@@ -575,6 +626,11 @@ footer .footer--container .copyright p span {
 }
 
 .cardTurismo div h3 {
+  font-family: "Neutraface", sans-serif;
+  margin: 0.5rem 1rem;
+}
+
+.cardTurismo div h5 {
   font-family: "Neutraface", sans-serif;
   margin: 0.5rem 1rem;
 }

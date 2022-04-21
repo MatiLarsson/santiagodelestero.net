@@ -45,8 +45,9 @@
     }
   }
   .buttonContainer {
-    margin: 1rem 0 2rem 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: .5rem 0 2rem 0;
   }
 }
 

@@ -1,40 +1,51 @@
-.leftButton{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%) translateX(20%);
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
-    img{
-        object-fit: contain;
-        filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
-        opacity: 70%;
-    }
+.leftButton {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(20%);
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  img {
+    object-fit: contain;
+    filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg)
+      brightness(102%) contrast(103%);
+    opacity: 70%;
+  }
 }
-.rightButton{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%) translateX(-20%);
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
-    img{
-        object-fit: contain;
-        filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
-        opacity: 70%;
-    }
+.rightButton {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(-20%);
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  img {
+    object-fit: contain;
+    filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg)
+      brightness(102%) contrast(103%);
+    opacity: 70%;
+  }
 }
-.verMasButton{
+.verMasButton {
+  border: none;
+  background-color: $color-2;
+  font-size: $fs-md;
+  padding: 0.5rem 1rem;
+  border-radius: $br-5;
+  margin: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: orangered;
+    transform: translateY(-2px);
+  }
+  &:active {
+    background-color: red;
+    transform: translateY(2px);
+  }
+  a {
     text-decoration: none;
-    font-size: $fs-lg;
-    font-weight: $fw-reg;
-    font-family: "Inter", sans-serif;
     color: $color-5;
-    background-color: $color-2;
-    border-radius: $br-5;
-    padding: 3px 20px;
-    box-shadow: $bs-bold;
-    cursor: pointer;
+  }
 }
