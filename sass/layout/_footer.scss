@@ -1,69 +1,69 @@
-footer{
+footer {
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .orangeBar{
+    .orangeBar {
         width: 100%;
         height: 16px;
         background-color: $color-2;
     }
-    .footer--container{
+    .footer--container {
         color: $color-5;
         width: 100%;
         background-color: $color-0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .socialMediaIconsList{
+        .socialMediaIconsList {
             width: 60%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             margin: 16px 0;
-            a{
+            a {
                 display: flex;
                 align-items: center;
                 margin: .7rem;
                 text-decoration: none;
-                .socialMediaIcon{
+                .socialMediaIcon {
                     width: 2rem;
                     filter: invert(53%) sepia(66%) saturate(5275%) hue-rotate(1deg) brightness(105%) contrast(104%);
                 }
             }
         }
-        .linksHeader{
+        .linksHeader {
             margin: 16px 0;
             color: $color-5;
         }
-        .interestLinks{
+        .interestLinks {
             margin: 16px 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            a{
+            a {
                 text-decoration: none;
                 color: $color-2;
                 margin: 0 16px;
             }
-            span{
+            span {
                 color: $color-2;
                 margin: 0 16px;
             }
         }
-        .copyright{
+        .copyright {
             margin: 16px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            p{
+            p {
                 font-family: 'Roboto', sans-serif;
                 color: gray;
                 font-size: $fs-sm;
                 margin: 4px 0;
-                span{
+                span {
                     color: $color-5;
                     font-size: $fs-md;
                     font-family: "DolceVita", sans-serif;
