@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago del Estero</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <script src="https://snapwidget.com/js/snapwidget.js" defer></script>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -32,19 +33,22 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="noticias">
+    <main class="mainInicio">
+        <section class="destacados">
             <div>
                 <h1>
                     Destacados
                 </h1>
             </div>
-            <div class="carouselContainer--noticias">
-                <div id="noticias__leftButton" class="leftButton">
+            <div class="carouselContainer-destacados" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">
                     <img src="assets/icons/caret-left-solid.svg" alt="left arrow">
-                </div>
-                <div class="noticias__carousel">
-                    <article class="noticia1">
+                </button>
+                <button class="carousel-button next" data-carousel-button="next">
+                    <img src="assets/icons/caret-right-solid.svg" alt="right arrow">
+                </button>
+                <div class="carousel-destacados" data-slides>
+                    <article class="slide-destacados slide-A1 slide" data-active>
                         <div>
                             <h2>
                                 Termas de Río Hondo
@@ -52,26 +56,22 @@
                             <p>Donde el agua termal "brota de las canillas"</p>
                         </div>
                     </article>
-                    <!-- <article class="noticia2">
+                    <article class="slide-destacados slide-A2 slide">
                         <div>
                             <h2>
-                                Título de la noticia 2
+                                Título del destacado 2
                             </h2>
-                            <p>Breve descripción de la noticia 2</p>
+                            <p>Breve descripción del destacado 2</p>
                         </div>
                     </article>
-                    <article class="noticia1">
+                    <article class="slide-destacados slide-A3 slide">
                         <div>
                             <h2>
-                                Título de la noticia 1
+                                Título del destacado 3
                             </h2>
-                            <p>Breve descripción de la noticia 1</p>
+                            <p>Breve descripción del destacado 3</p>
                         </div>
                     </article>
-                </div> -->
-                    <div id="noticias__rightButton" class="rightButton">
-                        <img src="assets/icons/caret-right-solid.svg" alt="right arrow">
-                    </div>
                 </div>
                 <div class="buttonContainer">
                     <button class="verMasButton"><a href="/" >ver más</a></button>
@@ -82,46 +82,47 @@
                 <p>SEGUINOS EN</p>
                 <p><a href="https://www.instagram.com/sgodelesteronet" target="_blank">@SGODELESTERONET</a></p>
             </div>
-
             <iframe src="https://snapwidget.com/embed/993760" class="snapwidget-widget" allowtransparency="true"
                 frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:70vw; "></iframe>
         </section>
         <section class="queHacer">
             <h3>QUE HACER EN</h3>
             <h2>SANTIAGO</h2>
-            <div class="carouselContainer--queHacer">
-                <div id="queHacer__leftButton" class="leftButton">
+            <div class="carouselContainer-queHacer" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">
                     <img src="assets/icons/caret-left-solid.svg" alt="left arrow">
-                </div>
-                <div class="queHacer__carousel">
-                    <article class="queHacerCard">
-                        <img src="/assets/images/estadio.jpg" alt="estadio único madre de ciudades">
+                </button>
+                <button class="carousel-button next" data-carousel-button="next">
+                    <img src="assets/icons/caret-right-solid.svg" alt="right arrow">
+                </button>
+                <div class="carousel-queHacer" data-slides>
+                    <article class="slide-queHacer slide" data-active>
+                            <img src="/assets/images/estadio.jpg" alt="estadio único madre de ciudades">
+                            <div>
+                                <p>
+                                    ESTADIO ÚNICO<br />MADRE DE CIUDADES
+                                </p>
+                                <p class="buttonContainer"><a href="/" class="verMasButton">ver más</a></p>
+                            </div>
+                    </article>
+                    <article class="slide-queHacer slide" data-active>
+                        <img src="/assets/images/SIERRAS DE SUMAMPA .png" alt="estadio único madre de ciudades">
                         <div>
                             <p>
-                                ESTADIO ÚNICO<br />MADRE DE CIUDADES
+                                SIERRAS<br />DE SUMAMPA
                             </p>
                             <p class="buttonContainer"><a href="/" class="verMasButton">ver más</a></p>
                         </div>
                     </article>
-                    <!-- <article>
-                        <img src="" alt="">
+                    <article class="slide-queHacer slide" data-active>
+                        <img src="/assets/images/santiago-del-estero.png" alt="estadio único madre de ciudades">
                         <div>
-                            <h2>
-                                Título de la actividad 2
-                            </h2>
+                            <p>
+                                SANTIAGO<br />PLAZA CENTRAL
+                            </p>
+                            <p class="buttonContainer"><a href="/" class="verMasButton">ver más</a></p>
                         </div>
                     </article>
-                    <article>
-                        <img src="" alt="">
-                        <div>
-                            <h2>
-                                Título de la actividad 3
-                            </h2>
-                        </div>
-                    </article> -->
-                </div>
-                <div id="queHacer__rightButton" class="rightButton">
-                    <img src="assets/icons/caret-right-solid.svg" alt="right arrow">
                 </div>
             </div>
         </section>
@@ -168,7 +169,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/index.js"></script>
 </body>
 
 </html>

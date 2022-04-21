@@ -14,7 +14,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -51,7 +51,7 @@ body {
 header {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,7 +182,7 @@ header nav .show {
   display: block !important;
 }
 
-main {
+.mainInicio {
   padding-top: 12vh;
   width: 100vw;
 }
@@ -319,11 +319,12 @@ footer .footer--container .copyright p span {
   padding-left: 5px;
 }
 
-.noticias {
+.destacados {
   width: 100%;
 }
 
-.noticias div h1 {
+.destacados div h1 {
+  z-index: 2;
   position: absolute;
   margin: 1rem 0;
   padding: 0.2rem 1rem;
@@ -335,11 +336,15 @@ footer .footer--container .copyright p span {
   background: linear-gradient(90deg, rgba(37, 37, 37, 0.85) 0%, rgba(37, 37, 37, 0.5) 70%, rgba(37, 37, 37, 0) 100%);
 }
 
-.noticias .carouselContainer--noticias .noticias__carousel .noticia1 {
+.destacados .carouselContainer-destacados .carousel-destacados {
   height: 78vh;
-  width: 100vw;
-  background-image: url(../../assets/images/termas.jpg);
-  background-position: left;
+  width: 100%;
+}
+
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados {
+  height: 78vh;
+  width: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -353,9 +358,13 @@ footer .footer--container .copyright p span {
           justify-content: flex-start;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 200ms opacity ease-in-out;
+  transition: 200ms opacity ease-in-out;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
 }
 
-.noticias .carouselContainer--noticias .noticias__carousel .noticia1 div {
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados div {
   padding: 0.2rem 1rem;
   padding-right: 3rem;
   font-family: "Inter", sans-serif;
@@ -364,17 +373,29 @@ footer .footer--container .copyright p span {
   background: linear-gradient(90deg, rgba(37, 37, 37, 0.85) 0%, rgba(37, 37, 37, 0.5) 70%, rgba(37, 37, 37, 0) 100%);
 }
 
-.noticias .carouselContainer--noticias .noticias__carousel .noticia1 div h2 {
-  font-weight: 600;
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados div h2 {
+  font-weight: 700;
   font-size: 1.4rem;
 }
 
-.noticias .carouselContainer--noticias .noticias__carousel .noticia1 div p {
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados div p {
   font-size: 0.8rem;
   font-weight: 400;
 }
 
-.noticias .buttonContainer {
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados.slide-A1 {
+  background-image: url(../../assets/images/termas.jpg);
+}
+
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados.slide-A2 {
+  background-image: url(../../assets/images/fincamaria.jpg);
+}
+
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados.slide-A3 {
+  background-image: url(../../assets/images/motogp.jpg);
+}
+
+.destacados .buttonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,6 +434,7 @@ footer .footer--container .copyright p span {
 
 .instagram iframe {
   margin: 1rem 0;
+  min-height: 550px;
 }
 
 .queHacer {
@@ -445,19 +467,23 @@ footer .footer--container .copyright p span {
   font-weight: 700;
 }
 
-.queHacer .carouselContainer--queHacer {
+.queHacer .carouselContainer-queHacer {
   position: relative;
   width: 100%;
+  min-height: 300px;
   margin: 1.5rem 0 4rem 0;
 }
 
-.queHacer .carouselContainer--queHacer .queHacer__carousel {
+.queHacer .carouselContainer-queHacer .carousel-queHacer {
+  position: relative;
   width: 70%;
   margin: auto;
 }
 
-.queHacer .carouselContainer--queHacer .queHacer__carousel article {
+.queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer {
   width: 100%;
+  max-width: 600px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,7 +496,7 @@ footer .footer--container .copyright p span {
           align-items: center;
 }
 
-.queHacer .carouselContainer--queHacer .queHacer__carousel article img {
+.queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer img {
   width: 100%;
   height: 180px;
   -o-object-fit: cover;
@@ -478,12 +504,12 @@ footer .footer--container .copyright p span {
   background-color: #09F;
 }
 
-.queHacer .carouselContainer--queHacer .queHacer__carousel article div {
+.queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer div {
   width: 100%;
   background-color: #FFF;
 }
 
-.queHacer .carouselContainer--queHacer .queHacer__carousel article div p {
+.queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer div p {
   font-family: "Inter", sans-serif;
   color: #FF6600;
   font-size: 1rem;
@@ -606,11 +632,6 @@ footer .footer--container .copyright p span {
           transform: translateY(2px);
 }
 
-.verMasButton a {
-  text-decoration: none;
-  color: #FFF;
-}
-
 .cardTurismo {
   width: 90vw;
   min-height: 50vh;
@@ -639,5 +660,72 @@ footer .footer--container .copyright p span {
   padding: 0.5rem 1rem;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+}
+
+/* Botones de carouseles */
+.carousel-button {
+  position: absolute;
+  background: none;
+  border: none;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button img {
+  width: 3rem;
+  height: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
+          filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
+  opacity: 70%;
+}
+
+.carousel-button:hover, .carousel-button:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-button:hover img, .carousel-button:focus img {
+  opacity: 100%;
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 0;
+  -webkit-transform: translateY(-50%) translateX(20%);
+          transform: translateY(-50%) translateX(20%);
+}
+
+.carousel-button.next {
+  right: 0;
+  -webkit-transform: translateY(-50%) translateX(-20%);
+          transform: translateY(-50%) translateX(-20%);
+}
+
+/* Slides de carouseles - Estilos genericos */
+.slide {
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: 200ms opacity ease-in-out;
+  transition: 200ms opacity ease-in-out;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.slide[data-active] {
+  opacity: 1;
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
