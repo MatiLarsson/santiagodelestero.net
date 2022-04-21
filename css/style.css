@@ -395,16 +395,6 @@ footer .footer--container .copyright p span {
   background-image: url(../../assets/images/motogp.jpg);
 }
 
-.destacados .buttonContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: .5rem 0 2rem 0;
-}
-
 .instagram {
   width: 100%;
   display: -webkit-box;
@@ -541,10 +531,6 @@ footer .footer--container .copyright p span {
   font-family: 'Holden';
 }
 
-.mainLugares {
-  padding-bottom: 5vh;
-}
-
 .mainLugares img {
   width: 100vw;
 }
@@ -610,7 +596,17 @@ footer .footer--container .copyright p span {
   opacity: 70%;
 }
 
-.verMasButton {
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.buttonContainer .verMasButton {
   border: none;
   background-color: #FF6600;
   font-size: 1rem;
@@ -620,16 +616,21 @@ footer .footer--container .copyright p span {
   cursor: pointer;
 }
 
-.verMasButton:hover {
+.buttonContainer .verMasButton:hover {
   background-color: orangered;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
 
-.verMasButton:active {
+.buttonContainer .verMasButton:active {
   background-color: red;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
+}
+
+.buttonContainer .verMasButton a {
+  color: white;
+  text-decoration: none;
 }
 
 .cardTurismo {
