@@ -168,6 +168,7 @@
       color: $color-0;
       img {
         width: 30px;
+        filter: invert(15%) sepia(87%) saturate(6993%) hue-rotate(8deg) brightness(104%) contrast(124%);
       }
       a {
         text-decoration: none;

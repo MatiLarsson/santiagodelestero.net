@@ -547,6 +547,8 @@ footer .footer--container .copyright p span {
 
 .youtube .youtubeLink p img {
   width: 30px;
+  -webkit-filter: invert(15%) sepia(87%) saturate(6993%) hue-rotate(8deg) brightness(104%) contrast(124%);
+          filter: invert(15%) sepia(87%) saturate(6993%) hue-rotate(8deg) brightness(104%) contrast(124%);
 }
 
 .youtube .youtubeLink p a {
