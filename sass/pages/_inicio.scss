@@ -21,17 +21,23 @@
       .slide-destacados {
         height: 78vh;
         width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
         box-shadow: $bs-bold;
         transition: 200ms opacity ease-in-out;
         transition-delay: 200ms;
-        div {
-          padding: 0.2rem 1rem;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+        .texto-destacados {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: translateY(-100%);
+          padding: 0.5rem 1rem;
           padding-right: 3rem;
           font-family: "Inter", sans-serif;
           color: $color-5;
@@ -43,16 +49,14 @@
           p {
             font-size: $fs-sm;
             font-weight: 400;
+            padding-bottom: 0.5rem;
           }
         }
-        &.slide-A1 {
-          background-image: url(../../assets/images/termas.jpg);
-        }
-        &.slide-A2 {
-          background-image: url(../../assets/images/fincamaria.jpg);
-        }
-        &.slide-A3 {
-          background-image: url(../../assets/images/motogp.jpg);
+        button {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%) translateY(-30%);
         }
       }
     }
@@ -61,6 +65,7 @@
 
 .instagram {
   width: 100%;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,6 +75,9 @@
       font-family: "Inter", sans-serif;
       font-size: $fs-lg;
       color: $color-0;
+      img {
+        width: 30px;
+      }
       a {
         text-decoration: none;
         font-size: $fs-md;
@@ -134,8 +142,43 @@
             text-align: center;
             margin: 1rem 0;
           }
+          button {
+            margin-left: 50%;
+            transform: translateX(-50%);
+          }
         }
       }
     }
+  }
+}
+.youtube{
+  margin: 2rem 0;
+  baackground-color: $color-5;
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .youtubeLink {
+    p {
+      text-align: center;
+      font-family: "Inter", sans-serif;
+      font-size: $fs-lg;
+      color: $color-0;
+      img {
+        width: 30px;
+      }
+      a {
+        text-decoration: none;
+        font-size: $fs-md;
+        color: $color-2;
+      }
+    }
+  }
+  iframe{
+    width: 80%;
+    height: 200px;
+    border-radius: $br-5;
   }
 }

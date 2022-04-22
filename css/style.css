@@ -188,7 +188,7 @@ header nav .show {
 }
 
 .mainTurismo, .mainLugares {
-  padding-top: 18.5vh;
+  padding-top: 17.5vh;
 }
 
 footer {
@@ -344,18 +344,6 @@ footer .footer--container .copyright p span {
 .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados {
   height: 78vh;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   -webkit-transition: 200ms opacity ease-in-out;
@@ -364,8 +352,23 @@ footer .footer--container .copyright p span {
           transition-delay: 200ms;
 }
 
-.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados div {
-  padding: 0.2rem 1rem;
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados .texto-destacados {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  padding: 0.5rem 1rem;
   padding-right: 3rem;
   font-family: "Inter", sans-serif;
   color: #FFF;
@@ -373,30 +376,28 @@ footer .footer--container .copyright p span {
   background: linear-gradient(90deg, rgba(37, 37, 37, 0.85) 0%, rgba(37, 37, 37, 0.5) 70%, rgba(37, 37, 37, 0) 100%);
 }
 
-.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados div h2 {
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados .texto-destacados h2 {
   font-weight: 700;
   font-size: 1.4rem;
 }
 
-.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados div p {
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados .texto-destacados p {
   font-size: 0.8rem;
   font-weight: 400;
+  padding-bottom: 0.5rem;
 }
 
-.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados.slide-A1 {
-  background-image: url(../../assets/images/termas.jpg);
-}
-
-.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados.slide-A2 {
-  background-image: url(../../assets/images/fincamaria.jpg);
-}
-
-.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados.slide-A3 {
-  background-image: url(../../assets/images/motogp.jpg);
+.destacados .carouselContainer-destacados .carousel-destacados .slide-destacados button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-30%);
+          transform: translateX(-50%) translateY(-30%);
 }
 
 .instagram {
   width: 100%;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,6 +415,10 @@ footer .footer--container .copyright p span {
   font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   color: #111111;
+}
+
+.instagram .instagramLink p img {
+  width: 30px;
 }
 
 .instagram .instagramLink p a {
@@ -508,6 +513,54 @@ footer .footer--container .copyright p span {
   margin: 1rem 0;
 }
 
+.queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer div button {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.youtube {
+  margin: 2rem 0;
+  baackground-color: #FFF;
+  width: 100%;
+  min-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.youtube .youtubeLink p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  color: #111111;
+}
+
+.youtube .youtubeLink p img {
+  width: 30px;
+}
+
+.youtube .youtubeLink p a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #FF6600;
+}
+
+.youtube iframe {
+  width: 80%;
+  height: 200px;
+  border-radius: 5px;
+}
+
 .tituloTurismo {
   width: 100vw;
   min-height: 6vh;
@@ -597,17 +650,7 @@ footer .footer--container .copyright p span {
   opacity: 70%;
 }
 
-.buttonContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0.5rem 0 2rem 0;
-}
-
-.buttonContainer .verMasButton {
+.primary-button {
   border: none;
   background-color: #FF6600;
   font-size: 1rem;
@@ -617,19 +660,19 @@ footer .footer--container .copyright p span {
   cursor: pointer;
 }
 
-.buttonContainer .verMasButton:hover {
+.primary-button:hover {
   background-color: orangered;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
 
-.buttonContainer .verMasButton:active {
+.primary-button:active {
   background-color: red;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
 
-.buttonContainer .verMasButton a {
+.primary-button a {
   color: white;
   text-decoration: none;
 }
