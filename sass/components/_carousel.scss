@@ -11,29 +11,29 @@
     background-color: rgba(0, 0, 0, 0.1);
     background: none;
     img {
-        width: 3rem;
+        width: 2rem;
         height: 3rem;
         object-fit: contain;
         filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
         opacity: 70%;
     }
     &:hover,
-    &:focus {
+    &:active {
         background-color: rgba(0, 0, 0, 0.3);
         img{
             opacity: 100%;
         }
     }
-    &:focus {
+    &:active {
         outline: 1px solid black;
     }
     &.prev {
         left: 0;
-        transform: translateY(-50%) translateX(20%);
+        transform: translateY(-50%) translateX(10%);
     }
     &.next {
         right: 0;
-        transform: translateY(-50%) translateX(-20%);
+        transform: translateY(-50%) translateX(-10%);
     }
 }
 
