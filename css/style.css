@@ -558,9 +558,15 @@ footer .footer--container .copyright p span {
 }
 
 .youtube iframe {
-  width: 80%;
-  height: 200px;
+  width: 320px;
+  height: 180px;
   border-radius: 5px;
+}
+
+.youtube h5 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #FF6600;
 }
 
 .tituloTurismo {
@@ -751,7 +757,7 @@ footer .footer--container .copyright p span {
 }
 
 .carousel-button img {
-  width: 3rem;
+  width: 2rem;
   height: 3rem;
   -o-object-fit: contain;
      object-fit: contain;
@@ -760,28 +766,28 @@ footer .footer--container .copyright p span {
   opacity: 70%;
 }
 
-.carousel-button:hover, .carousel-button:focus {
+.carousel-button:hover, .carousel-button:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.carousel-button:hover img, .carousel-button:focus img {
+.carousel-button:hover img, .carousel-button:active img {
   opacity: 100%;
 }
 
-.carousel-button:focus {
+.carousel-button:active {
   outline: 1px solid black;
 }
 
 .carousel-button.prev {
   left: 0;
-  -webkit-transform: translateY(-50%) translateX(20%);
-          transform: translateY(-50%) translateX(20%);
+  -webkit-transform: translateY(-50%) translateX(10%);
+          transform: translateY(-50%) translateX(10%);
 }
 
 .carousel-button.next {
   right: 0;
-  -webkit-transform: translateY(-50%) translateX(-20%);
-          transform: translateY(-50%) translateX(-20%);
+  -webkit-transform: translateY(-50%) translateX(-10%);
+          transform: translateY(-50%) translateX(-10%);
 }
 
 /* Slides de carouseles - Estilos genericos */
