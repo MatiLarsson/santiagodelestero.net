@@ -85,8 +85,8 @@ header a {
 
 header a .logo {
   width: 80%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
   padding: 1rem 0;
 }
 
@@ -183,12 +183,12 @@ header nav .show {
 }
 
 .mainInicio {
-  padding-top: 12vh;
+  padding-top: 11vh;
   width: 100vw;
 }
 
 .mainTurismo, .mainLugares {
-  padding-top: 17.5vh;
+  padding-top: 16.5vh;
 }
 
 footer {
