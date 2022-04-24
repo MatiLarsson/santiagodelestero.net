@@ -16,9 +16,8 @@ header {
     justify-content: center;
     width: 100%;
     .logo {
-      height: 7vh;
       width: 80%;
-      object-fit: fill;
+      object-fit: cover;
       padding: 1rem 0;
     }
   }

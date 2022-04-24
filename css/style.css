@@ -84,10 +84,9 @@ header a {
 }
 
 header a .logo {
-  height: 7vh;
   width: 80%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 1rem 0;
 }
 
@@ -185,20 +184,12 @@ header nav .show {
 }
 
 .mainInicio {
-<<<<<<< HEAD
   padding-top: 10vh;
-=======
-  padding-top: 11vh;
->>>>>>> ramaMarcos
   width: 100vw;
 }
 
 .mainTurismo, .mainLugares {
-<<<<<<< HEAD
   padding-top: 15vh;
-=======
-  padding-top: 16.5vh;
->>>>>>> ramaMarcos
 }
 
 footer {
