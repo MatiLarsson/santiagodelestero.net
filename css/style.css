@@ -84,6 +84,7 @@ header a {
 }
 
 header a .logo {
+  height: 7vh;
   width: 80%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -91,6 +92,7 @@ header a .logo {
 }
 
 header nav {
+  min-height: 3vh;
   width: 100%;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
@@ -183,12 +185,12 @@ header nav .show {
 }
 
 .mainInicio {
-  padding-top: 12vh;
+  padding-top: 10vh;
   width: 100vw;
 }
 
 .mainTurismo, .mainLugares {
-  padding-top: 17.5vh;
+  padding-top: 15vh;
 }
 
 footer {
@@ -597,6 +599,7 @@ footer .footer--container .copyright p span {
 }
 
 .mainLugares h4 {
+  height: 5vh;
   font-size: 1.4rem;
   padding: 1rem;
   font-family: 'inter', sans-serif;

@@ -16,12 +16,14 @@ header {
     justify-content: center;
     width: 100%;
     .logo {
+      height: 7vh;
       width: 80%;
       object-fit: contain;
       padding: 1rem 0;
     }
   }
   nav {
+    min-height: 3vh;
     width: 100%;
     box-shadow: $bs-bold;
     background-color: $color-2;
