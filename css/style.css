@@ -51,26 +51,13 @@ body {
 header {
   position: fixed;
   top: 0;
-  z-index: 3;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #FFF;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  z-index: 4;
 }
 
-header a {
-  cursor: pointer;
-  text-decoration: none;
+header .header-logo {
+  height: 8vh;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,21 +67,39 @@ header a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
 }
 
-header a .logo {
+header .header-logo img {
   width: 80%;
-  -o-object-fit: fill;
-     object-fit: fill;
-  padding: 1rem 0;
 }
 
 header nav {
-  width: 100%;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   background-color: #FF6600;
+  height: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header nav img {
+  height: 60%;
+  padding: 0 1rem;
+}
+
+header #turismo-dropdown {
+  position: absolute;
+  height: 88vh;
+  width: 40vw;
+  background-color: #FF6600;
+  left: -40vw;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,52 +107,31 @@ header nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+header #turismo-dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header nav ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.3rem 0;
 }
 
-header nav ul li {
-  margin: 0 1rem;
-}
-
-header nav ul li a {
-  cursor: pointer;
-  font-family: sans-serif;
-  text-decoration: none;
-  font-weight: 700;
-  color: #FFF;
-}
-
-header nav ul .active {
-  color: #FF6600;
-  background-color: #FFF;
-  border-radius: 3px;
-  padding: 0rem 1rem;
-}
-
-header nav #turismo-dropdown {
-  width: 100vh;
-  display: none;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-header nav #turismo-dropdown ul {
+header #turismo-dropdown ul li {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,35 +144,54 @@ header nav #turismo-dropdown ul {
           align-items: center;
 }
 
-header nav #turismo-dropdown ul li {
-  width: 30%;
+header #turismo-dropdown ul li a {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #FFF;
 }
 
-header nav #turismo-dropdown ul li a {
-  padding: 0.5rem 0;
-}
-
-header nav #turismo-dropdown ul li a:hover {
+header #turismo-dropdown ul li a:hover {
+  width: 35vw;
   background-color: #FFF;
   color: #FF6600;
 }
 
-header nav #turismo-dropdown ul hr {
-  color: #FFF;
-  width: 30%;
+header #turismo-dropdown ul hr {
+  width: 35vw;
 }
 
-header nav .show {
-  display: block !important;
+header #turismo-dropdown .socialMediaSideBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header #turismo-dropdown .socialMediaSideBar a img {
+  margin: .5rem;
+  height: 1.5rem;
+  -webkit-filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(295deg) brightness(96%) contrast(103%);
+          filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(295deg) brightness(96%) contrast(103%);
+}
+
+header .show {
+  left: 0 !important;
 }
 
 .mainInicio {
-  padding-top: 11vh;
+  padding-top: 12vh;
   width: 100vw;
 }
 
 .mainTurismo, .mainLugares {
-  padding-top: 16.5vh;
+  padding-top: 18vh;
+  width: 100vw;
 }
 
 footer {
