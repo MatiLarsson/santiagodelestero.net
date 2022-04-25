@@ -93,7 +93,7 @@ header nav img {
 
 header nav h4 {
   font-weight: 400;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   color: #FFF;
 }
 
@@ -179,7 +179,7 @@ header #turismo-dropdown .socialMediaSideBar {
 }
 
 header #turismo-dropdown .socialMediaSideBar a img {
-  margin: .5rem;
+  margin: 0.5rem;
   height: 1.5rem;
   -webkit-filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(295deg) brightness(96%) contrast(103%);
           filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(295deg) brightness(96%) contrast(103%);
@@ -572,7 +572,7 @@ footer .footer--container .copyright p span {
 }
 
 .youtube h5 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #FF6600;
 }
@@ -597,7 +597,7 @@ footer .footer--container .copyright p span {
 .tituloTurismo h2 {
   font-size: 1.6rem;
   color: #FFF;
-  font-family: 'Holden';
+  font-family: "Holden";
 }
 
 .mainLugares img {
@@ -607,13 +607,13 @@ footer .footer--container .copyright p span {
 .mainLugares h4 {
   font-size: 1.4rem;
   padding: 1rem;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-weight: 700;
 }
 
 .mainLugares p {
   padding: 0.2rem 1rem;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-size: 0.8rem;
 }
 
@@ -624,7 +624,7 @@ footer .footer--container .copyright p span {
 .mainLugares h5 {
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 .mainLugares div button {
