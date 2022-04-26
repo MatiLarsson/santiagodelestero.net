@@ -15,6 +15,9 @@ header {
     }
   }
   nav {
+    min-height: 3vh;
+    width: 100%;
+    box-shadow: $bs-bold;
     background-color: $color-2;
     height: 4vh;
     display: flex;

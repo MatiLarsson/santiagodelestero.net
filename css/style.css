@@ -77,6 +77,10 @@ header .header-logo img {
 }
 
 header nav {
+  min-height: 3vh;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   background-color: #FF6600;
   height: 4vh;
   display: -webkit-box;
@@ -300,7 +304,21 @@ footer .footer--container .interestLinks {
           align-items: center;
 }
 
-footer .footer--container .interestLinks a {
+footer .footer--container .interestLinks div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+footer .footer--container .interestLinks div a {
   cursor: pointer;
   font-size: 1rem;
   text-decoration: none;
@@ -310,12 +328,16 @@ footer .footer--container .interestLinks a {
   transition: 0.3s;
 }
 
-footer .footer--container .interestLinks a:hover {
+footer .footer--container .interestLinks div a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-footer .footer--container .interestLinks p {
+footer .footer--container .interestLinks div a img {
+  width: 4rem;
+}
+
+footer .footer--container .interestLinks div p {
   color: #FFF;
   margin: 0 16px;
 }
@@ -426,7 +448,7 @@ footer .footer--container .copyright p span {
 
 .instagram {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +470,8 @@ footer .footer--container .copyright p span {
 
 .instagram .instagramLink p img {
   width: 30px;
+  -webkit-filter: invert(29%) sepia(60%) saturate(5384%) hue-rotate(325deg) brightness(95%) contrast(85%);
+          filter: invert(29%) sepia(60%) saturate(5384%) hue-rotate(325deg) brightness(95%) contrast(85%);
 }
 
 .instagram .instagramLink p a {
@@ -463,6 +487,7 @@ footer .footer--container .copyright p span {
 
 .queHacer {
   width: 100%;
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,7 +574,7 @@ footer .footer--container .copyright p span {
 }
 
 .youtube {
-  margin: 2rem 0;
+  margin: 1rem 0;
   background-color: #FFF;
   width: 100%;
   min-height: 800px;
@@ -589,13 +614,55 @@ footer .footer--container .copyright p span {
 .youtube iframe {
   width: 320px;
   height: 180px;
-  border-radius: 5px;
+  border-radius: 12px;
 }
 
 .youtube h5 {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #FF6600;
+}
+
+.spotify {
+  margin: 1rem 0;
+  background-color: #FFF;
+  width: 100%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.spotify .spotifyLink p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  color: #111111;
+}
+
+.spotify .spotifyLink p img {
+  width: 30px;
+  -webkit-filter: invert(54%) sepia(50%) saturate(666%) hue-rotate(89deg) brightness(95%) contrast(95%);
+          filter: invert(54%) sepia(50%) saturate(666%) hue-rotate(89deg) brightness(95%) contrast(95%);
+}
+
+.spotify .spotifyLink p a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #FF6600;
+}
+
+.spotify iframe {
+  width: 320px;
 }
 
 .tituloTurismo {
