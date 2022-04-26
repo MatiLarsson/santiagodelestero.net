@@ -308,14 +308,14 @@ footer .footer--container .interestLinks div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem 0;
+}
+
+footer .footer--container .interestLinks div img {
+  height: 2rem;
 }
 
 footer .footer--container .interestLinks div a {
@@ -323,23 +323,17 @@ footer .footer--container .interestLinks div a {
   font-size: 1rem;
   text-decoration: none;
   color: #FF6600;
-  margin: 5px 16px;
+  margin: 0 .5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-footer .footer--container .interestLinks div a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-footer .footer--container .interestLinks div a img {
-  width: 4rem;
-}
-
-footer .footer--container .interestLinks div p {
+footer .footer--container .interestLinks p {
   color: #FFF;
-  margin: 0 16px;
+}
+
+footer .footer--container .interestLinks .linkSgo {
+  margin-bottom: .15rem;
 }
 
 footer .footer--container .copyright {
