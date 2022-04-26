@@ -11,27 +11,51 @@
 
 <body>
     <header>
-        <a href="/">
-            <img class="logo" src="/assets/logos/santiago-del-estero/Logo-horizontal.png"
+        <a class="header-logo" href="/index.html">
+            <img src="/assets/logos/santiago-del-estero/Logo-horizontal.png"
                 alt="logo de santiago del estero punto net">
         </a>
         <nav>
-            <ul>
-                <li><a href="/">INICIO</a></li>
-                <li><a class="active" id="turismo-dropdown-btn">TURISMO</a></li>
-            </ul>
-            <div id="turismo-dropdown">
-                <ul>
-                    <li><a href="./turismo_queHacer.html">Que hacer</a></li>
-                    <hr color="white">
-                    <li><a href="./turismo_queVisitar.html">Que visitar</a></li>
-                    <hr color="white">
-                    <li><a href="./turismo_gastronomia.html">Gastronomia</a></li>
-                </ul>
-            </div>
+            <img id="turismo-dropdown-btn" src="/assets/icons/bars-solid.svg" alt="menu icon">
+            <h4>Compartiendo la Santiagueñidad pa' todo el mundo</h4>
         </nav>
+        <div id="turismo-dropdown">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <hr color="white">
+                <li><a href="/pages/turismo_queHacer.html">Que hacer</a></li>
+                <hr color="white">
+                <li><a href="/pages/turismo_queVisitar.html">Que visitar</a></li>
+                <hr color="white">
+                <li><a href="/pages/turismo_gastronomia.html">Gastronomia</a></li>
+            </ul>
+            <div class="socialMediaSideBar">
+                <a href="https://www.instagram.com/sgodelesteronet" target="_blank">
+                    <img class="socialMediaIcon" src="/assets/logos/social-media/instagram.svg" alt="instagramLogo">
+                </a>
+                <a href="https://www.facebook.com/SantiagodelEstero" target="_blank">
+                    <img class="socialMediaIcon" src="/assets/logos/social-media/facebook.svg" alt="facebookLogo">
+                </a>
+                <a href="https://twitter.com/sgodelesteronet" target="_blank">
+                    <img class="socialMediaIcon" src="/assets/logos/social-media/twitter.svg" alt="twitterLogo">
+                </a>
+                <a href="https://www.youtube.com/c/santiagodelesteronet" target="_blank">
+                    <img class="socialMediaIcon" src="/assets/logos/social-media/youtube.svg" alt="youtubeLogo">
+                </a>
+                <a href="https://open.spotify.com/episode/6Q7TtD7Cv8E7KJS5TSjkAV?si=ctDK8sXRR4yRzM09GwsrHg&utm_source=&nd=1"
+                    target="_blank">
+                    <img class="socialMediaIcon" src="/assets/logos/social-media/spotify.svg" alt="spotifyLogo">
+                </a>
+                <a href="https://www.tiktok.com/@sdenet?lang=es" target="_blank">
+                    <img class="socialMediaIcon" src="/assets/logos/social-media/tiktok.svg" alt="tiktokLogo">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=3856190007&text&app_absent=0" target="_blank">
+                    <img class="socialMediaIcon" src="/assets/logos/social-media/whatsapp.svg" alt="whatsappLogo">
+                </a>
+            </div>
+        </div>
         <div class="tituloTurismo">
-            <h2>Que visitar</h2>
+            <h2>Que Visitar</h2>
         </div>
     </header>
     <main class="mainTurismo">
@@ -41,8 +65,13 @@
                 <div>
                     <h3>Sierras de Sumampa</h3>
                     <h5>Disfruta entre bosques y balnearios</h5>
-                    <p>Recorre una región de vegetación exuberante, balnearios naturales, arte rupestre y aves para contemplar</p>
-                    <p>¿Conoces las serranías del sur de la provincia de Santiago del Estero? Aquí te esperan treinta mil hectáreas de naturaleza en un área protegida. Paisajes coloreados de verde. Paredones de roca rojiza cubiertos por claveles del aire. Bosques que te regalan lugares ideales para practicar el trekking, para disfrutar del camping y para contemplar la fauna autóctona. Disfruta un microclima único, con temperaturas menos cálidas que en las llanuras.</p>
+                    <p>Recorre una región de vegetación exuberante, balnearios naturales, arte rupestre y aves para
+                        contemplar</p>
+                    <p>¿Conoces las serranías del sur de la provincia de Santiago del Estero? Aquí te esperan treinta
+                        mil hectáreas de naturaleza en un área protegida. Paisajes coloreados de verde. Paredones de
+                        roca rojiza cubiertos por claveles del aire. Bosques que te regalan lugares ideales para
+                        practicar el trekking, para disfrutar del camping y para contemplar la fauna autóctona. Disfruta
+                        un microclima único, con temperaturas menos cálidas que en las llanuras.</p>
                     <button><a href="./subpages/sierraSumampa.html">ver más</a></button>
                 </div>
             </div>
@@ -51,7 +80,10 @@
                 <div>
                     <h3>Villa la Punta</h3>
                     <h5>Como salido de un cuento</h5>
-                    <p>Villa La Punta es una localidad argentina ubicada en el departamento Choya de la provincia de Santiago del Estero. Se encuentra sobre la Ruta Provincial 24, 80 km al este de Frías, y a 5 km de Estación La Punta, caserío alrededor de la estación de ferrocarril construida a la altura de Villa La Punta.</p>
+                    <p>Villa La Punta es una localidad argentina ubicada en el departamento Choya de la provincia de
+                        Santiago del Estero. Se encuentra sobre la Ruta Provincial 24, 80 km al este de Frías, y a 5 km
+                        de Estación La Punta, caserío alrededor de la estación de ferrocarril construida a la altura de
+                        Villa La Punta.</p>
                     <button><a href="./subpages/villaLaPunta.html">ver más</a></button>
                 </div>
             </div>
@@ -60,7 +92,11 @@
                 <div>
                     <h3>Termas de Rio Hondo</h3>
                     <h5>donde el agua termal "que brota de las canillas"</h5>
-                    <p>Una ciudad turística en el río Dulce del norte de Argentina. Es conocida por sus numerosas termas, que son populares por sus supuestas propiedades terapéuticas. En las afueras al oeste de la ciudad, cerca del Embalse de Río Hondo, está el Autódromo Provincial Termas de Río Hondo, sede de eventos internacionales de deportes de motor. Aquí se encuentra el Museo del Automóvil, que exhibe automóviles de carrera antiguos y motocicletas.</p>
+                    <p>Una ciudad turística en el río Dulce del norte de Argentina. Es conocida por sus numerosas
+                        termas, que son populares por sus supuestas propiedades terapéuticas. En las afueras al oeste de
+                        la ciudad, cerca del Embalse de Río Hondo, está el Autódromo Provincial Termas de Río Hondo,
+                        sede de eventos internacionales de deportes de motor. Aquí se encuentra el Museo del Automóvil,
+                        que exhibe automóviles de carrera antiguos y motocicletas.</p>
                     <button><a href="./subpages/termasRioHondo.html">ver más</a></button>
                 </div>
             </div>
@@ -83,7 +119,8 @@
                 <a href="https://www.youtube.com/c/santiagodelesteronet" target="_blank">
                     <img class="socialMediaIcon" src="/assets/logos/social-media/youtube.svg" alt="youtubeLogo">
                 </a>
-                <a href="https://open.spotify.com/episode/6Q7TtD7Cv8E7KJS5TSjkAV?si=ctDK8sXRR4yRzM09GwsrHg&utm_source=&nd=1" target="_blank">
+                <a href="https://open.spotify.com/episode/6Q7TtD7Cv8E7KJS5TSjkAV?si=ctDK8sXRR4yRzM09GwsrHg&utm_source=&nd=1"
+                    target="_blank">
                     <img class="socialMediaIcon" src="/assets/logos/social-media/spotify.svg" alt="spotifyLogo">
                 </a>
                 <a href="https://www.tiktok.com/@sdenet?lang=es" target="_blank">

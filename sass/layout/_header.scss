@@ -1,24 +1,16 @@
 header {
   position: fixed;
   top: 0;
-  z-index: 3;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: $color-5;
-  box-shadow: $bs-bold;
-  a {
-    cursor: pointer;
-    text-decoration: none;
+  z-index: 4;
+  .header-logo {
+    height: 8vh;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    .logo {
+    img {
       width: 80%;
-      object-fit: cover;
-      padding: 1rem 0;
     }
   }
   nav {
@@ -26,58 +18,73 @@ header {
     width: 100%;
     box-shadow: $bs-bold;
     background-color: $color-2;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img {
+      height: 60%;
+    }
+    h4 {
+      font-weight: 400;
+      font-family: "Caveat", cursive;
+      color: $color-5;
+    }
+  }
+  #turismo-dropdown {
+    position: absolute;
+    height: 88vh;
+    width: 40vw;
+    background-color: $color-2;
+    left: -40vw;
+    transition: 0.5s all ease-in-out;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
     ul {
-      list-style-type: none;
       display: flex;
-      justify-content: center;
-      padding: 0.3rem 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      list-style-type: none;
       li {
-        margin: 0 1rem;
-        a {
-          cursor: pointer;
-          font-family: sans-serif;
-          text-decoration: none;
-          font-weight: $fw-bold;
-          color: $color-5;
-        }
-      }
-      .active {
-        color: $color-2;
-        background-color: $color-5;
-        border-radius: 3px;
-        padding: 0rem 1rem;
-      }
-    }
-    #turismo-dropdown {
-      width: 100vh;
-      display: none;
-      transition: all 0.5s linear;
-      ul {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        li {
-          width: 30%;
-          a {
-            padding: 0.5rem 0;
-            &:hover {
-              background-color: $color-5;
-              color: $color-2;
-            }
+        a {
+          text-align: center;
+          width: 100%;
+          padding: 0.5rem 1rem;
+          text-decoration: none;
+          color: $color-5;
+          &:hover {
+            width: 35vw;
+            background-color: $color-5;
+            color: $color-2;
           }
         }
-        hr {
-          color: $color-5;
-          width: 30%;
+      }
+      hr {
+        width: 35vw;
+      }
+    }
+    .socialMediaSideBar {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      a {
+        img {
+          margin: 0.5rem;
+          height: 1.5rem;
+          filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(295deg)
+            brightness(96%) contrast(103%);
         }
       }
     }
-    .show {
-      display: block !important;
-    }
+  }
+  .show {
+    left: 0 !important;
   }
 }

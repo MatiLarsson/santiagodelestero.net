@@ -14,6 +14,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -51,26 +52,13 @@ body {
 header {
   position: fixed;
   top: 0;
-  z-index: 3;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #FFF;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  z-index: 4;
 }
 
-header a {
-  cursor: pointer;
-  text-decoration: none;
+header .header-logo {
+  height: 8vh;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,15 +68,10 @@ header a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
 }
 
-header a .logo {
+header .header-logo img {
   width: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 1rem 0;
-}
 
 header nav {
   min-height: 3vh;
@@ -96,6 +79,35 @@ header nav {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   background-color: #FF6600;
+  height: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav img {
+  height: 60%;
+}
+
+header nav h4 {
+  font-weight: 400;
+  font-family: "Caveat", cursive;
+  color: #FFF;
+}
+
+header #turismo-dropdown {
+  position: absolute;
+  height: 88vh;
+  width: 40vw;
+  background-color: #FF6600;
+  left: -40vw;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,52 +115,31 @@ header nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+header #turismo-dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header nav ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.3rem 0;
 }
 
-header nav ul li {
-  margin: 0 1rem;
-}
-
-header nav ul li a {
-  cursor: pointer;
-  font-family: sans-serif;
-  text-decoration: none;
-  font-weight: 700;
-  color: #FFF;
-}
-
-header nav ul .active {
-  color: #FF6600;
-  background-color: #FFF;
-  border-radius: 3px;
-  padding: 0rem 1rem;
-}
-
-header nav #turismo-dropdown {
-  width: 100vh;
-  display: none;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-header nav #turismo-dropdown ul {
+header #turismo-dropdown ul li {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,35 +152,54 @@ header nav #turismo-dropdown ul {
           align-items: center;
 }
 
-header nav #turismo-dropdown ul li {
-  width: 30%;
+header #turismo-dropdown ul li a {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #FFF;
 }
 
-header nav #turismo-dropdown ul li a {
-  padding: 0.5rem 0;
-}
-
-header nav #turismo-dropdown ul li a:hover {
+header #turismo-dropdown ul li a:hover {
+  width: 35vw;
   background-color: #FFF;
   color: #FF6600;
 }
 
-header nav #turismo-dropdown ul hr {
-  color: #FFF;
-  width: 30%;
+header #turismo-dropdown ul hr {
+  width: 35vw;
 }
 
-header nav .show {
-  display: block !important;
+header #turismo-dropdown .socialMediaSideBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header #turismo-dropdown .socialMediaSideBar a img {
+  margin: 0.5rem;
+  height: 1.5rem;
+  -webkit-filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(295deg) brightness(96%) contrast(103%);
+          filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(295deg) brightness(96%) contrast(103%);
+}
+
+header .show {
+  left: 0 !important;
 }
 
 .mainInicio {
-  padding-top: 10vh;
+  padding-top: 12vh;
   width: 100vw;
 }
 
 .mainTurismo, .mainLugares {
-  padding-top: 15vh;
+  padding-top: 18vh;
+  width: 100vw;
 }
 
 footer {
@@ -565,7 +575,7 @@ footer .footer--container .copyright p span {
 }
 
 .youtube h5 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #FF6600;
 }
@@ -590,7 +600,7 @@ footer .footer--container .copyright p span {
 .tituloTurismo h2 {
   font-size: 1.6rem;
   color: #FFF;
-  font-family: 'Holden';
+  font-family: "Holden";
 }
 
 .mainLugares img {
@@ -601,13 +611,13 @@ footer .footer--container .copyright p span {
   height: 5vh;
   font-size: 1.4rem;
   padding: 1rem;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-weight: 700;
 }
 
 .mainLugares p {
   padding: 0.2rem 1rem;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-size: 0.8rem;
 }
 
@@ -618,7 +628,7 @@ footer .footer--container .copyright p span {
 .mainLugares h5 {
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 .mainLugares div button {

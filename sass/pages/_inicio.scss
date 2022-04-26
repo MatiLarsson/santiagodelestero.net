@@ -168,7 +168,8 @@
       color: $color-0;
       img {
         width: 30px;
-        filter: invert(15%) sepia(87%) saturate(6993%) hue-rotate(8deg) brightness(104%) contrast(124%);
+        filter: invert(15%) sepia(87%) saturate(6993%) hue-rotate(8deg)
+          brightness(104%) contrast(124%);
       }
       a {
         text-decoration: none;
@@ -177,13 +178,13 @@
       }
     }
   }
-  iframe{
+  iframe {
     width: 320px;
     height: 180px;
     border-radius: $br-5;
   }
-  h5{
-    font-family: 'Inter', sans-serif;
+  h5 {
+    font-family: "Inter", sans-serif;
     font-size: $fs-md;
     color: $color-2;
   }

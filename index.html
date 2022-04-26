@@ -13,25 +13,48 @@
 
 <body>
     <header>
-        <a href="/">
-            <img class="logo" src="assets/logos/santiago-del-estero/Logo-horizontal.png"
-                alt="logo de santiago del estero punto net">
+        <a class="header-logo" href="/index.html">
+            <img src="assets/logos/santiago-del-estero/Logo-horizontal.png" alt="logo de santiago del estero punto net">
         </a>
         <nav>
-            <ul>
-                <li><a href="/" class="active">INICIO</a></li>
-                <li><a id="turismo-dropdown-btn">TURISMO</a></li>
-            </ul>
-            <div id="turismo-dropdown">
-                <ul>
-                    <li><a href="./pages/turismo_queHacer.html">Que hacer</a></li>
-                    <hr color="white">
-                    <li><a href="./pages/turismo_queVisitar.html">Que visitar</a></li>
-                    <hr color="white">
-                    <li><a href="./pages/turismo_gastronomia.html">Gastronomia</a></li>
-                </ul>
-            </div>
+            <img id="turismo-dropdown-btn" src="./assets/icons/bars-solid.svg" alt="menu icon">
+            <h4>Compartiendo la Santiagueñidad pa' todo el mundo</h4>
         </nav>
+        <div id="turismo-dropdown">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <hr color="white">
+                <li><a href="./pages/turismo_queHacer.html">Que hacer</a></li>
+                <hr color="white">
+                <li><a href="./pages/turismo_queVisitar.html">Que visitar</a></li>
+                <hr color="white">
+                <li><a href="./pages/turismo_gastronomia.html">Gastronomia</a></li>
+            </ul>
+            <div class="socialMediaSideBar">
+                <a href="https://www.instagram.com/sgodelesteronet" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/instagram.svg" alt="instagramLogo">
+                </a>
+                <a href="https://www.facebook.com/SantiagodelEstero" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/facebook.svg" alt="facebookLogo">
+                </a>
+                <a href="https://twitter.com/sgodelesteronet" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/twitter.svg" alt="twitterLogo">
+                </a>
+                <a href="https://www.youtube.com/c/santiagodelesteronet" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/youtube.svg" alt="youtubeLogo">
+                </a>
+                <a href="https://open.spotify.com/episode/6Q7TtD7Cv8E7KJS5TSjkAV?si=ctDK8sXRR4yRzM09GwsrHg&utm_source=&nd=1"
+                    target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/spotify.svg" alt="spotifyLogo">
+                </a>
+                <a href="https://www.tiktok.com/@sdenet?lang=es" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/tiktok.svg" alt="tiktokLogo">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=3856190007&text&app_absent=0" target="_blank">
+                    <img class="socialMediaIcon" src="assets/logos/social-media/whatsapp.svg" alt="whatsappLogo">
+                </a>
+            </div>
+        </div>
     </header>
     <main class="mainInicio">
         <section class="destacados">
@@ -160,7 +183,8 @@
             <div class="youtubeLink">
                 <p>SEGUINOS EN </p>
                 <p><img src="assets/logos/social-media/youtube.svg" alt="logo de youtube"></p>
-                <p><a href="https://www.youtube.com/channel/UCRzsdYfiSbvy2NFFPh6gtlg" target="_blank">@SANTIAGODELESTERO.NET</a></p>
+                <p><a href="https://www.youtube.com/channel/UCRzsdYfiSbvy2NFFPh6gtlg"
+                        target="_blank">@SANTIAGODELESTERO.NET</a></p>
             </div>
             <iframe class="video" width="424" height="238" src="https://www.youtube.com/embed/VkeeU9KY9Nw"
                 title="YouTube video player" frameborder="0"
