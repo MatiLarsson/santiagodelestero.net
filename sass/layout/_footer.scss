@@ -49,14 +49,18 @@ footer {
       justify-content: center;
       align-items: center;
       div {
+        cursor: pointer;
         display: flex;
         align-items: center;
         margin: 1rem 0;
+        transition: .3s all ease;
+        &:hover {
+          transform: scale(1.05);
+        }
         img{
           height: 2rem;
         }
         a {
-          cursor: pointer;
           font-size: $fs-md;
           text-decoration: none;
           color: $color-2;

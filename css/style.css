@@ -177,11 +177,12 @@ header #turismo-dropdown .socialMediaSideBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 header #turismo-dropdown .socialMediaSideBar a img {
@@ -305,6 +306,7 @@ footer .footer--container .interestLinks {
 }
 
 footer .footer--container .interestLinks div {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,6 +314,13 @@ footer .footer--container .interestLinks div {
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem 0;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+footer .footer--container .interestLinks div:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 footer .footer--container .interestLinks div img {
@@ -319,7 +328,6 @@ footer .footer--container .interestLinks div img {
 }
 
 footer .footer--container .interestLinks div a {
-  cursor: pointer;
   font-size: 1rem;
   text-decoration: none;
   color: #FF6600;

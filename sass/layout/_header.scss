@@ -73,8 +73,9 @@ header {
     }
     .socialMediaSideBar {
       display: flex;
-      flex-wrap: wrap-reverse;
+      flex-wrap: wrap;
       justify-content: center;
+      margin-bottom: 1.5rem;
       a {
         img {
           margin: 0.3rem;
