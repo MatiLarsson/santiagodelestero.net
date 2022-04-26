@@ -72,9 +72,12 @@ header .header-logo {
 
 header .header-logo img {
   width: 80%;
-}
 
 header nav {
+  min-height: 3vh;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   background-color: #FF6600;
   height: 4vh;
   display: -webkit-box;
@@ -605,6 +608,7 @@ footer .footer--container .copyright p span {
 }
 
 .mainLugares h4 {
+  height: 5vh;
   font-size: 1.4rem;
   padding: 1rem;
   font-family: "inter", sans-serif;
