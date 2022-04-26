@@ -298,6 +298,12 @@ footer .footer--container .interestLinks a {
   margin: 0 16px;
 }
 
+footer .footer--container .interestLinks a .linkLogo {
+  width: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 footer .footer--container .interestLinks span {
   color: #FF6600;
   margin: 0 16px;
@@ -409,7 +415,7 @@ footer .footer--container .copyright p span {
 
 .instagram {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,6 +437,8 @@ footer .footer--container .copyright p span {
 
 .instagram .instagramLink p img {
   width: 30px;
+  -webkit-filter: invert(29%) sepia(60%) saturate(5384%) hue-rotate(325deg) brightness(95%) contrast(85%);
+          filter: invert(29%) sepia(60%) saturate(5384%) hue-rotate(325deg) brightness(95%) contrast(85%);
 }
 
 .instagram .instagramLink p a {
@@ -446,6 +454,7 @@ footer .footer--container .copyright p span {
 
 .queHacer {
   width: 100%;
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,7 +541,7 @@ footer .footer--container .copyright p span {
 }
 
 .youtube {
-  margin: 2rem 0;
+  margin: 1rem 0;
   background-color: #FFF;
   width: 100%;
   min-height: 800px;
@@ -572,13 +581,55 @@ footer .footer--container .copyright p span {
 .youtube iframe {
   width: 320px;
   height: 180px;
-  border-radius: 5px;
+  border-radius: 12px;
 }
 
 .youtube h5 {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #FF6600;
+}
+
+.spotify {
+  margin: 1rem 0;
+  background-color: #FFF;
+  width: 100%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.spotify .spotifyLink p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  color: #111111;
+}
+
+.spotify .spotifyLink p img {
+  width: 30px;
+  -webkit-filter: invert(54%) sepia(50%) saturate(666%) hue-rotate(89deg) brightness(95%) contrast(95%);
+          filter: invert(54%) sepia(50%) saturate(666%) hue-rotate(89deg) brightness(95%) contrast(95%);
+}
+
+.spotify .spotifyLink p a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #FF6600;
+}
+
+.spotify iframe {
+  width: 320px;
 }
 
 .tituloTurismo {

@@ -47,6 +47,10 @@ footer {
                 text-decoration: none;
                 color: $color-2;
                 margin: 0 16px;
+                .linkLogo {
+                    width: 3rem;
+                    object-fit: contain;
+                }
             }
             span {
                 color: $color-2;
