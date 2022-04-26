@@ -72,6 +72,7 @@ header .header-logo {
 
 header .header-logo img {
   width: 80%;
+}
 
 header nav {
   min-height: 3vh;
@@ -608,7 +609,6 @@ footer .footer--container .copyright p span {
 }
 
 .mainLugares h4 {
-  height: 5vh;
   font-size: 1.4rem;
   padding: 1rem;
   font-family: "inter", sans-serif;
