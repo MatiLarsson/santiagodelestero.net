@@ -252,7 +252,6 @@ footer .footer--container .socialMediaIconsList {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 16px 0;
 }
 
 footer .footer--container .socialMediaIconsList a {
@@ -262,14 +261,22 @@ footer .footer--container .socialMediaIconsList a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: .7rem;
+  margin: 0.7rem;
   text-decoration: none;
 }
 
 footer .footer--container .socialMediaIconsList a .socialMediaIcon {
-  width: 2rem;
+  cursor: pointer;
+  width: 1.8rem;
   -webkit-filter: invert(53%) sepia(66%) saturate(5275%) hue-rotate(1deg) brightness(105%) contrast(104%);
           filter: invert(53%) sepia(66%) saturate(5275%) hue-rotate(1deg) brightness(105%) contrast(104%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .footer--container .socialMediaIconsList a .socialMediaIcon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 footer .footer--container .linksHeader {
@@ -278,12 +285,15 @@ footer .footer--container .linksHeader {
 }
 
 footer .footer--container .interestLinks {
-  margin: 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -293,19 +303,22 @@ footer .footer--container .interestLinks {
 }
 
 footer .footer--container .interestLinks a {
+  cursor: pointer;
+  font-size: 1rem;
   text-decoration: none;
   color: #FF6600;
-  margin: 0 16px;
+  margin: 5px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-footer .footer--container .interestLinks a .linkLogo {
-  width: 3rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+footer .footer--container .interestLinks a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
-footer .footer--container .interestLinks span {
-  color: #FF6600;
+footer .footer--container .interestLinks p {
+  color: #FFF;
   margin: 0 16px;
 }
 
@@ -324,7 +337,7 @@ footer .footer--container .copyright {
 }
 
 footer .footer--container .copyright p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: gray;
   font-size: 0.8rem;
   margin: 4px 0;
