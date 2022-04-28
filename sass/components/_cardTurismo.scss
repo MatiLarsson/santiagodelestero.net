@@ -1,11 +1,17 @@
 .cardTurismo {
   width: 90vw;
-  min-height: 50vh;
-  margin: 2rem auto;
+  height: 55vh;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-radius: $br-5;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   img {
     width: 100%;
+    height: 20vh;
+    object-fit: cover;
     border-radius: $br-5 $br-5 0 0;
   }
   div {
@@ -21,27 +27,60 @@
       padding: 0.5rem 1rem;
       font-family: "Roboto", sans-serif;
       font-size: $fs-sm;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
-    button{
-      border: none;
-      background-color: $color-2;
-      font-size: $fs-md;
-      padding: 0.5rem 1rem;
-      border-radius: $br-5;
-      margin: 0.5rem;
-      cursor: pointer;
-      &:hover {
-        background-color: orangered;
-        transform: translateY(-2px);
-      }
-      &:active {
-        background-color: red;
-        transform: translateY(2px);
-      }
-      a {
-        color: white;
-        text-decoration: none;
-      }
+   
+  }
+  button {
+    border: none;
+    background-color: $color-2;
+    font-size: $fs-md;
+    padding: 0.5rem 1rem;
+    border-radius: $br-5;
+    margin: 0.5rem;
+    cursor: pointer;
+    &:hover {
+      background-color: orangered;
+      transform: translateY(-2px);
+    }
+    &:active {
+      background-color: red;
+      transform: translateY(2px);
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .cardTurismo {
+    width: 40vw;
+    height: 35vh;
+    img{
+      height: 15vh;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .cardTurismo {
+    width: 32vw;
+    height: 47vh;
+    img{
+      height: 20vh;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .cardTurismo {
+    width: 20vw;
+    height: 37vh;
+    img{
+      height: 15vh;
     }
   }
 }

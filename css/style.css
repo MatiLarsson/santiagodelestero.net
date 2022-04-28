@@ -199,11 +199,33 @@ header .show {
 .mainInicio {
   padding-top: 12vh;
   width: 100vw;
+  min-height: 82vh;
 }
 
 .mainTurismo, .mainLugares {
   padding-top: 18vh;
   width: 100vw;
+  min-height: 67vh;
+}
+
+.mainTurismo .cardTurismo__container, .mainLugares .cardTurismo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1600px) {
+  .mainInicio, .mainTurismo, .mainLugares {
+    padding: 18vh 300px 0 300px;
+  }
 }
 
 footer {
@@ -733,6 +755,8 @@ footer .footer--container .copyright p span {
           align-items: center;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .tituloTurismo h2 {
@@ -815,8 +839,21 @@ footer .footer--container .copyright p span {
 
 .cardTurismo {
   width: 90vw;
-  min-height: 50vh;
-  margin: 2rem auto;
+  height: 55vh;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -824,6 +861,9 @@ footer .footer--container .copyright p span {
 
 .cardTurismo img {
   width: 100%;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
 
@@ -841,9 +881,11 @@ footer .footer--container .copyright p span {
   padding: 0.5rem 1rem;
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.cardTurismo div button {
+.cardTurismo button {
   border: none;
   background-color: #FF6600;
   font-size: 1rem;
@@ -853,21 +895,51 @@ footer .footer--container .copyright p span {
   cursor: pointer;
 }
 
-.cardTurismo div button:hover {
+.cardTurismo button:hover {
   background-color: orangered;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
 
-.cardTurismo div button:active {
+.cardTurismo button:active {
   background-color: red;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
 
-.cardTurismo div button a {
+.cardTurismo button a {
   color: white;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .cardTurismo {
+    width: 40vw;
+    height: 35vh;
+  }
+  .cardTurismo img {
+    height: 15vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cardTurismo {
+    width: 32vw;
+    height: 47vh;
+  }
+  .cardTurismo img {
+    height: 20vh;
+  }
+}
+
+@media (min-width: 1600px) {
+  .cardTurismo {
+    width: 20vw;
+    height: 37vh;
+  }
+  .cardTurismo img {
+    height: 15vh;
+  }
 }
 
 /* Botones de carouseles */
