@@ -11,8 +11,8 @@
     background-color: rgba(0, 0, 0, 0.1);
     background: none;
     img {
-        width: 2rem;
-        height: 3rem;
+        width: 3rem;
+        height: 4.5rem;
         object-fit: contain;
         filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
         opacity: 70%;
@@ -37,7 +37,7 @@
     }
 }
 
-/* Slides de carouseles - Estilos genericos */
+/* Slides de carousel destacados */
 .slide {
     opacity: 0;
     position: absolute;

@@ -389,6 +389,12 @@ footer .footer--container .copyright p span {
   background: linear-gradient(90deg, rgba(37, 37, 37, 0.85) 0%, rgba(37, 37, 37, 0.5) 70%, rgba(37, 37, 37, 0) 100%);
 }
 
+@media screen and (min-width: 768px) {
+  .destacados div h1 {
+    font-size: 2rem;
+  }
+}
+
 .destacados .carouselContainer-destacados .carousel-destacados {
   height: 78vh;
   width: 100%;
@@ -416,6 +422,7 @@ footer .footer--container .copyright p span {
 }
 
 .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados .texto-destacados {
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -432,20 +439,43 @@ footer .footer--container .copyright p span {
 .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados .texto-destacados h2 {
   font-weight: 700;
   font-size: 1.4rem;
+  word-wrap: break-word;
 }
 
 .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados .texto-destacados p {
   font-size: 0.8rem;
   font-weight: 400;
   padding-bottom: 0.5rem;
+  word-wrap: break-word;
+}
+
+@media screen and (min-width: 768px) {
+  .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados .texto-destacados {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados .texto-destacados h2 {
+    font-size: 1.6rem;
+    max-width: 80%;
+  }
+  .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados .texto-destacados p {
+    font-size: 1rem;
+    max-width: 80%;
+  }
 }
 
 .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados button {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-30%);
-          transform: translateX(-50%) translateY(-30%);
+  right: 50%;
+  -webkit-transform: translateX(50%) translateY(-40%);
+          transform: translateX(50%) translateY(-40%);
+}
+
+@media screen and (min-width: 768px) {
+  .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados button {
+    right: 15%;
+  }
 }
 
 .instagram {
@@ -485,10 +515,14 @@ footer .footer--container .copyright p span {
 .instagram iframe {
   margin: 1rem 0;
   min-height: 550px;
+  border: none;
+  overflow: hidden;
+  width: 80%;
 }
 
 .queHacer {
   width: 100%;
+  height: 450px;
   margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,20 +555,17 @@ footer .footer--container .copyright p span {
 .queHacer .carouselContainer-queHacer {
   position: relative;
   width: 100%;
-  min-height: 300px;
-  margin: 1.5rem 0 4rem 0;
+  height: 500px;
+  margin: 1.5rem 0;
 }
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer {
-  position: relative;
-  width: 70%;
+  height: 300px;
   margin: auto;
 }
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,16 +579,37 @@ footer .footer--container .copyright p span {
 }
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer img {
-  width: 100%;
-  height: 180px;
+  width: 300px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #09F;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer div {
-  width: 100%;
+  width: 300px;
   background-color: #FFF;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer div p {
@@ -567,12 +619,11 @@ footer .footer--container .copyright p span {
   font-weight: 700;
   text-align: center;
   margin: 1rem 0;
+  word-wrap: break-word;
 }
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer div button {
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin-bottom: 1rem;
 }
 
 .youtube {
@@ -722,52 +773,11 @@ footer .footer--container .copyright p span {
   margin-bottom: 1rem;
 }
 
-.leftButton {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%) translateX(20%);
-          transform: translateY(-50%) translateX(20%);
-  width: 2.5rem;
-  height: 2.5rem;
-  cursor: pointer;
-}
-
-.leftButton img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
-          filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
-  opacity: 70%;
-}
-
-.rightButton {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  -webkit-transform: translateY(-50%) translateX(-20%);
-          transform: translateY(-50%) translateX(-20%);
-  width: 2.5rem;
-  height: 2.5rem;
-  cursor: pointer;
-  border: none;
-}
-
-.rightButton img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
-          filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
-  opacity: 70%;
-}
-
 .primary-button {
   border: none;
   background-color: #FF6600;
-  font-size: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -785,7 +795,22 @@ footer .footer--container .copyright p span {
 
 .primary-button a {
   color: white;
+  font-size: 1rem;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .primary-button {
+    padding: .5rem 1.5rem;
+  }
+  .primary-button a {
+    font-size: 1.4rem;
+  }
+}
+
+/* Swiper buttons */
+.swiper-button-prev, .swiper-button-next {
+  color: #FF6600;
 }
 
 .cardTurismo {
@@ -860,8 +885,8 @@ footer .footer--container .copyright p span {
 }
 
 .carousel-button img {
-  width: 2rem;
-  height: 3rem;
+  width: 3rem;
+  height: 4.5rem;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-filter: invert(46%) sepia(44%) saturate(3947%) hue-rotate(360deg) brightness(102%) contrast(103%);
@@ -893,7 +918,7 @@ footer .footer--container .copyright p span {
           transform: translateY(-50%) translateX(-10%);
 }
 
-/* Slides de carouseles - Estilos genericos */
+/* Slides de carousel destacados */
 .slide {
   opacity: 0;
   position: absolute;
