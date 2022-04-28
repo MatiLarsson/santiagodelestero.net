@@ -3,10 +3,10 @@ const turismoDropDown = document.getElementById('turismo-dropdown');
 document.getElementById('turismo-dropdown-btn').addEventListener('click', (e) => {turismoDropDown.classList.toggle('show');});
 
 
-// Carousel
-const buttons = document.querySelectorAll("[data-carousel-button]");
+// Carousel 1
+const buttons1 = document.querySelectorAll("[data-carousel-button]");
 
-buttons.forEach(button => {
+buttons1.forEach(button => {
     button.addEventListener('click', () => {
         const offset = button.dataset.carouselButton === 'next' ? 1 : -1
         const slides = button
@@ -21,4 +21,38 @@ buttons.forEach(button => {
         slides.children[newIndex].dataset.active = true
         delete activeSlide.dataset.active
     });
-})
+});
+
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 10,
+        },
+        1280: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20,
+        },
+        1920: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          spaceBetween: 30,
+        },
+    }
+});

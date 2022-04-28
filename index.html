@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGODELESTERO.NET</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://snapwidget.com/js/snapwidget.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="js/index.js" defer></script>
 </head>
 
@@ -114,71 +116,75 @@
                 <p><a href="https://www.instagram.com/sgodelesteronet" target="_blank">@SGODELESTERONET</a></p>
             </div>
             <iframe src="https://snapwidget.com/embed/993901" class="snapwidget-widget" allowtransparency="true"
-                frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:80vw; "></iframe>
+                frameborder="0" scrolling="no"></iframe>
         </section>
         <section class="queHacer">
             <h3>QUE HACER EN</h3>
             <h2>SANTIAGO</h2>
-            <div class="carouselContainer-queHacer" data-carousel>
-                <button class="carousel-button prev" data-carousel-button="prev">
-                    <img src="assets/icons/caret-left-solid.svg" alt="left arrow">
-                </button>
-                <button class="carousel-button next" data-carousel-button="next">
-                    <img src="assets/icons/caret-right-solid.svg" alt="right arrow">
-                </button>
-                <div class="carousel-queHacer" data-slides>
-                    <article class="slide-queHacer slide" data-active>
+            <div class="carouselContainer-queHacer swiper mySwiper">
+                <div class="carousel-queHacer swiper-wrapper">
+                    <article class="slide-queHacer swiper-slide">
                         <img src="/assets/images/Catedral_de_Santiago_del_Estero_(fachada).jpg"
-                            alt="catedral basilica nuestra señeora del carmen">
+                        alt="catedral basilica nuestra señeora del carmen">
                         <div>
                             <p>
-                                Turismo<br />religioso
+                                Turismo religioso
                             </p>
-                            <button class="primary-button"><a href="/pages/subpages/turismoReligioso.html">ver
-                                    más</a></button>
+                            <button class="primary-button">
+                                <a href="/pages/subpages/turismoReligioso.html">ver más</a>
+                            </button>
                         </div>
                     </article>
-                    <article class="slide-queHacer slide">
+                    <article class="slide-queHacer swiper-slide">
                         <img src="/assets/images/SIERRAS DE SUMAMPA .png" alt="estadio único madre de ciudades">
                         <div>
                             <p>
-                                Sierras<br />de Sumampa
+                                Sierras de Sumampa
                             </p>
-                            <button class="primary-button"><a href="/pages/subpages/sierraSumampa.html">ver
-                                    más</a></button>
+                            <button class="primary-button">
+                                <a href="/pages/subpages/sierraSumampa.html">ver más</a>
+                            </button>
                         </div>
                     </article>
-                    <article class="slide-queHacer slide">
+                    <article class="slide-queHacer swiper-slide">
                         <img src="/assets/images/patioFroilan.jpg" alt="estadio único madre de ciudades">
                         <div>
                             <p>
-                                Patio del<br />Indio Froilán
+                                Patio del Indio Froilán
                             </p>
-                            <button class="primary-button"><a href="/pages/subpages/patioFroilan.html">ver
-                                    más</a></button>
+                            <button class="primary-button">
+                                <a href="/pages/subpages/patioFroilan.html">ver más</a>
+                            </button>
                         </div>
                     </article>
-                    <article class="slide-queHacer slide">
+                    <article class="slide-queHacer swiper-slide">
                         <img src="/assets/images/cumpleMadres.jpg" alt="festejo madre de ciudades">
                         <div>
                             <p>
-                                Aniversario fundación<br />Madre de Ciudades
+                                Aniversario Fundación Madre de Ciudades
                             </p>
-                            <button class="primary-button"><a href="/pages/subpages/cumpleCiudadMadre.html">ver
-                                    más</a></button>
+                            <button class="primary-button">
+                                <a href="/pages/subpages/cumpleCiudadMadre.html">ver más</a>
+                            </button>
                         </div>
                     </article>
-                    <article class="slide-queHacer slide">
+                    <article class="slide-queHacer swiper-slide">
                         <img src="/assets/images/fincamaria.jpg" alt="festejo madre de ciudades">
-                        <div>
-                            <p>
-                                Bodega Finca <br />Maria del Pilar
-                            </p>
-                            <button class="primary-button"><a href="/pages/subpages/fincaMariaPilar.html">ver
-                                    más</a></button>
-                        </div>
+                            <div>
+                                <p>
+                                    Bodega Finca Maria del Pilar
+                                </p>
+                                <button class="primary-button">
+                                    <a href="/pages/subpages/fincaMariaPilar.html">ver más</a>
+                                </button>
+                            </div>
                     </article>
                 </div>
+                <div class="swiper-button-next">
+                </div>
+                <div class="swiper-button-prev">
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <section class="youtube">
