@@ -103,6 +103,10 @@ header nav h4 {
   color: #FFF;
 }
 
+header nav .navBarPc {
+  display: none;
+}
+
 header #turismo-dropdown {
   position: absolute;
   height: 88vh;
@@ -196,16 +200,107 @@ header .show {
   left: 0 !important;
 }
 
+@media (min-width: 768px) {
+  #turismo-dropdown-btn {
+    display: none;
+  }
+  header nav {
+    padding: 0 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav h4 {
+    font-size: 1rem;
+  }
+  header nav .navBarPc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+  }
+  header nav .navBarPc li {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .navBarPc li .active {
+    color: #FF6600;
+    background-color: #FFF;
+    border-radius: 5px;
+  }
+  header nav .navBarPc li a {
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: #FFF;
+  }
+  header nav .navBarPc li a:hover {
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #252525;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .header-logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header .header-logo img {
+    width: 40%;
+    margin-left: 1rem;
+  }
+  header .header-logo h4 {
+    font-size: 1.4rem;
+  }
+  header nav {
+    padding: 0 2rem;
+  }
+  header nav .navBarPc li a {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  header .header-logo img {
+    width: 25%;
+    margin-left: 2rem;
+  }
+  header nav h4 {
+    font-size: 1.6rem;
+  }
+  header nav .navBarPc li a {
+    padding: 0 0.5rem;
+  }
+}
+
 .mainInicio {
   padding-top: 12vh;
   width: 100vw;
-  min-height: 82vh;
 }
 
 .mainTurismo, .mainLugares {
   padding-top: 18vh;
   width: 100vw;
-  min-height: 67vh;
+  min-height: 72vh;
 }
 
 .mainTurismo .cardTurismo__container, .mainLugares .cardTurismo__container {
@@ -814,7 +909,6 @@ footer .footer--container .copyright p span {
 
 .cardTurismo {
   width: 90vw;
-  height: 55vh;
   margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;

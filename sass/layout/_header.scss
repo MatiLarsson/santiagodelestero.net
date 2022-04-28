@@ -31,6 +31,9 @@ header {
       font-family: "Caveat", cursive;
       color: $color-5;
     }
+    .navBarPc {
+      display: none;
+    }
   }
   #turismo-dropdown {
     position: absolute;
@@ -88,5 +91,98 @@ header {
   }
   .show {
     left: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  #turismo-dropdown-btn {
+    display: none;
+  }
+  header {
+    nav {
+      padding: 0 1rem;
+      justify-content: space-between;
+      h4 {
+        font-size: $fs-md;
+      }
+      .navBarPc {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+        li {
+          width: fit-content;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .active {
+            color: $color-2;
+            background-color: $color-5;
+            border-radius: $br-5;
+          }
+          a {
+            text-align: center;
+            padding: 0.5rem 0.5rem;
+            text-decoration: none;
+            color: $color-5;
+            &:hover {
+              border-radius: $br-5;
+              background-color: $color-5;
+              color: $color-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    .header-logo {
+      justify-content: flex-start;
+
+      img {
+        width: 40%;
+        margin-left: 1rem;
+      }
+      h4 {
+        font-size: $fs-lg;
+      }
+    }
+    nav {
+      padding: 0 2rem;
+      .navBarPc {
+        li {
+          a {
+            padding: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  header {
+    .header-logo {
+      img {
+        width: 25%;
+        margin-left: 2rem;
+      }
+     
+    }
+    nav {
+      h4 {
+        font-size: $fs-xl;
+      }
+      .navBarPc {
+        li {
+          a {
+            padding: 0 0.5rem;
+          }
+        }
+      }
+    }
   }
 }
