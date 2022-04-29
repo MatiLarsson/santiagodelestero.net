@@ -318,7 +318,7 @@ header .show {
 }
 
 @media (min-width: 1600px) {
-  .mainInicio, .mainTurismo, .mainLugares {
+  .mainTurismo, .mainLugares {
     padding: 18vh 300px 0 300px;
   }
 }
@@ -629,12 +629,25 @@ footer .footer--container .copyright p span {
   color: #FF6600;
 }
 
-.instagram iframe {
-  margin: 1rem 0;
-  min-height: 550px;
-  border: none;
-  overflow: hidden;
-  width: 80%;
+.instagram .instaFeedMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.instagram .instaFeedMobile iframe {
+  width: 80vw;
+}
+
+.instagram .instaFeedTablet {
+  display: none;
+}
+
+.instagram .instaFeedDesktop {
+  display: none;
 }
 
 .queHacer {
@@ -833,6 +846,56 @@ footer .footer--container .copyright p span {
 
 .spotify iframe {
   width: 320px;
+}
+
+@media (min-width: 768px) {
+  .instagram .instaFeedMobile {
+    display: none;
+  }
+  .instagram .instaFeedTablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .instagram .instaFeedTablet iframe {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .instagram .instaFeedTablet {
+    display: none;
+  }
+  .instagram .instaFeedDesktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem 0;
+  }
+  .instagram .instaFeedDesktop iframe {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .instagram .instaFeedDesktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem 0;
+  }
+  .instagram .instaFeedDesktop iframe {
+    width: 45vw;
+  }
 }
 
 .tituloTurismo {
