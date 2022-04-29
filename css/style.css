@@ -307,7 +307,7 @@ header .show {
 .mainTurismo, .mainLugares {
   padding-top: 18vh;
   width: 100vw;
-  min-height: 72vh;
+  min-height: 85vh;
 }
 
 .mainTurismo .cardTurismo__container, .mainLugares .cardTurismo__container {
