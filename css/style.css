@@ -952,7 +952,105 @@ footer .footer--container .copyright p span {
 
 .mainLugares div button {
   margin-top: 1.5rem;
+  margin-left: 1rem;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .mainLugares img {
+    height: 20vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mainLugares h4 {
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+  }
+  .mainLugares p {
+    padding: 0rem 2rem;
+    font-size: 1rem;
+  }
+  .mainLugares h5 {
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+  }
+  .mainLugares div button {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mainLugares {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainLugares img {
+    height: 35vh;
+    width: 70vw;
+    margin-bottom: 2rem;
+  }
+  .mainLugares h4 {
+    width: 70vw;
+  }
+  .mainLugares p {
+    width: 70vw;
+  }
+  .mainLugares h5 {
+    width: 70vw;
+    font-size: 1rem;
+  }
+  .mainLugares div {
+    width: 70vw;
+  }
+  .mainLugares div button a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mainLugares {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainLugares img {
+    height: 40vh;
+    width: 65vw;
+    margin-bottom: 2rem;
+  }
+  .mainLugares h4 {
+    width: 55vw;
+    font-size: 1.6rem;
+  }
+  .mainLugares p {
+    font-size: 1.4rem;
+    width: 55vw;
+  }
+  .mainLugares h5 {
+    width: 55vw;
+    font-size: 1.4rem;
+  }
+  .mainLugares div {
+    width: 55vw;
+  }
+  .mainLugares div button a {
+    font-size: 1.4rem;
+  }
 }
 
 .primary-button {
@@ -1092,7 +1190,7 @@ footer .footer--container .copyright p span {
 @media (min-width: 1600px) {
   .cardTurismo {
     width: 20vw;
-    height: 37vh;
+    height: 39vh;
   }
   .cardTurismo img {
     height: 15vh;
