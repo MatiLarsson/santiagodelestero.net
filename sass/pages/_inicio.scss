@@ -119,11 +119,11 @@
   .instaFeedMobile {
     display: flex;
     justify-content: center;
-    iframe{
+    iframe {
       width: 80vw;
     }
   }
-  .instaFeedTablet{
+  .instaFeedTablet {
     display: none;
   }
   .instaFeedDesktop {
@@ -307,10 +307,10 @@
     .instaFeedMobile {
       display: none;
     }
-    .instaFeedTablet{
+    .instaFeedTablet {
       display: flex;
       justify-content: center;
-      iframe{
+      iframe {
         width: 70vw;
       }
     }
@@ -334,13 +334,20 @@
 }
 
 @media (min-width: 1600px) {
-  .instagram {
-    .instaFeedDesktop {
-      display: flex;
-      justify-content: center;
-      margin: 1rem 0;
-      iframe {
-        width: 45vw;
+  .destacados {
+    div {
+      h1 {
+        padding-right: 300px;
+      }
+    }
+    .instagram {
+      .instaFeedDesktop {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+        iframe {
+          width: 45vw;
+        }
       }
     }
   }

@@ -286,7 +286,10 @@ header .show {
 @media (min-width: 1600px) {
   header .header-logo img {
     width: 25%;
-    margin-left: 2rem;
+    margin-left: 300px;
+  }
+  header nav {
+    padding: 0 300px;
   }
   header nav h4 {
     font-size: 1.6rem;
@@ -988,7 +991,10 @@ footer .footer--container .copyright p span {
 }
 
 @media (min-width: 1600px) {
-  .instagram .instaFeedDesktop {
+  .destacados div h1 {
+    padding-right: 300px;
+  }
+  .destacados .instagram .instaFeedDesktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -997,7 +1003,7 @@ footer .footer--container .copyright p span {
             justify-content: center;
     margin: 1rem 0;
   }
-  .instagram .instaFeedDesktop iframe {
+  .destacados .instagram .instaFeedDesktop iframe {
     width: 45vw;
   }
 }
