@@ -737,19 +737,18 @@ footer .footer--container .copyright p span {
 .queHacer .carouselContainer-queHacer {
   position: relative;
   width: 90%;
-  height: 500px;
   margin: 1.5rem 0;
   overflow: visible;
 }
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer {
-  height: 400px;
+  height: 370px;
   width: 100%;
   margin: auto;
 }
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer {
-  height: 100%;
+  height: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,7 +774,7 @@ footer .footer--container .copyright p span {
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer div {
   width: 300px;
-  height: 100px;
+  height: 130px;
   background-color: #FFF;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
