@@ -74,7 +74,7 @@
           right: 50%;
           transform: translateX(50%) translateY(-40%);
           @media screen and (min-width: 768px) {
-              right: 15%;
+            right: 15%;
           }
         }
       }
@@ -96,7 +96,8 @@
       color: $color-0;
       img {
         width: 30px;
-        filter: invert(29%) sepia(60%) saturate(5384%) hue-rotate(325deg) brightness(95%) contrast(85%);
+        filter: invert(29%) sepia(60%) saturate(5384%) hue-rotate(325deg)
+          brightness(95%) contrast(85%);
       }
       a {
         text-decoration: none;
@@ -115,12 +116,18 @@
       }
     }
   }
-  iframe {
-    margin: 1rem 0;
-    min-height: 550px;
-    border:none;
-    overflow:hidden;
-    width:80%;
+  .instaFeedMobile {
+    display: flex;
+    justify-content: center;
+    iframe{
+      width: 80vw;
+    }
+  }
+  .instaFeedTablet{
+    display: none;
+  }
+  .instaFeedDesktop {
+    display: none;
   }
 }
 .queHacer {
@@ -268,7 +275,8 @@
       color: $color-0;
       img {
         width: 30px;
-        filter: invert(54%) sepia(50%) saturate(666%) hue-rotate(89deg) brightness(95%) contrast(95%);
+        filter: invert(54%) sepia(50%) saturate(666%) hue-rotate(89deg)
+          brightness(95%) contrast(95%);
       }
       a {
         text-decoration: none;
@@ -291,6 +299,50 @@
     width: 320px;
     @media screen and (min-width: 768px) {
       width: 640px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .instagram {
+    .instaFeedMobile {
+      display: none;
+    }
+    .instaFeedTablet{
+      display: flex;
+      justify-content: center;
+      iframe{
+        width: 70vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .instagram {
+    .instaFeedTablet {
+      display: none;
+    }
+    .instaFeedDesktop {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+      iframe {
+        width: 60vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .instagram {
+    .instaFeedDesktop {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+      iframe {
+        width: 45vw;
+      }
     }
   }
 }
