@@ -26,6 +26,11 @@
 }
 
 /* Swiper buttons */
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-next {
   color: $color-2;
+  transform: translateX(100%);
+}
+.swiper-button-prev {
+  color: $color-2;
+  transform: translateX(-100%);
 }

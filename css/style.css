@@ -22,6 +22,10 @@
           box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: DolceVita;
   src: url(../../assets/fonts/Dolce.ttf);
@@ -489,6 +493,35 @@ footer .footer--container .copyright p span {
   padding-left: 5px;
 }
 
+@media screen and (min-width: 1280px) {
+  footer .footer--container {
+    display: -ms-grid;
+    display: grid;
+    height: 150px;
+        grid-template-areas: "links devs media";
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  footer .footer--container .socialMediaIconsList {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: media;
+    width: 90%;
+  }
+  footer .footer--container .interestLinks {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: links;
+  }
+  footer .footer--container .copyright {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: devs;
+  }
+}
+
 .destacados {
   width: 100%;
 }
@@ -512,20 +545,20 @@ footer .footer--container .copyright p span {
   }
 }
 
+.destacados .carouselContainer-destacados {
+  width: 100vw;
+}
+
 .destacados .carouselContainer-destacados .carousel-destacados {
   height: 78vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados {
   height: 78vh;
-  width: 100%;
+  width: 100vw;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-  -webkit-transition: 200ms opacity ease-in-out;
-  transition: 200ms opacity ease-in-out;
-  -webkit-transition-delay: 200ms;
-          transition-delay: 200ms;
 }
 
 .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados img {
@@ -533,13 +566,13 @@ footer .footer--container .copyright p span {
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .destacados .carouselContainer-destacados .carousel-destacados .slide-destacados .texto-destacados {
-  width: 100%;
+  width: 100vw;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -652,7 +685,7 @@ footer .footer--container .copyright p span {
 
 .queHacer {
   width: 100%;
-  height: 450px;
+  height: 500px;
   margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -665,6 +698,7 @@ footer .footer--container .copyright p span {
       -ms-flex-align: center;
           align-items: center;
   background-color: #252525;
+  overflow: hidden;
 }
 
 .queHacer h3 {
@@ -684,13 +718,15 @@ footer .footer--container .copyright p span {
 
 .queHacer .carouselContainer-queHacer {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 500px;
   margin: 1.5rem 0;
+  overflow: visible;
 }
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer {
-  height: 300px;
+  height: 400px;
+  width: 100%;
   margin: auto;
 }
 
@@ -710,7 +746,7 @@ footer .footer--container .copyright p span {
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer img {
   width: 300px;
-  height: 250px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #09F;
@@ -721,6 +757,7 @@ footer .footer--container .copyright p span {
 
 .queHacer .carouselContainer-queHacer .carousel-queHacer .slide-queHacer div {
   width: 300px;
+  height: 100px;
   background-color: #FFF;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -768,11 +805,11 @@ footer .footer--container .copyright p span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .youtube .youtubeLink p {
@@ -794,10 +831,36 @@ footer .footer--container .copyright p span {
   color: #FF6600;
 }
 
+@media screen and (min-width: 768px) {
+  .youtube .youtubeLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .youtube .youtubeLink p {
+    margin: 1.5rem 0.5rem;
+  }
+  .youtube .youtubeLink p a {
+    font-size: 1.4rem;
+  }
+}
+
 .youtube iframe {
   width: 320px;
   height: 180px;
   border-radius: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .youtube iframe {
+    width: 640px;
+    height: 360px;
+    margin: 1rem;
+  }
 }
 
 .youtube h5 {
@@ -842,6 +905,24 @@ footer .footer--container .copyright p span {
   text-decoration: none;
   font-size: 1rem;
   color: #FF6600;
+}
+
+@media screen and (min-width: 768px) {
+  .spotify .spotifyLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .spotify .spotifyLink p {
+    margin: 1.5rem 0.5rem;
+  }
+  .spotify .spotifyLink p a {
+    font-size: 1.4rem;
+  }
 }
 
 .spotify iframe {
@@ -1089,8 +1170,16 @@ footer .footer--container .copyright p span {
 }
 
 /* Swiper buttons */
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-next {
   color: #FF6600;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.swiper-button-prev {
+  color: #FF6600;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .cardTurismo {
@@ -1249,10 +1338,10 @@ footer .footer--container .copyright p span {
 .slide {
   opacity: 0;
   position: absolute;
-  -webkit-transition: 200ms opacity ease-in-out;
-  transition: 200ms opacity ease-in-out;
-  -webkit-transition-delay: 200ms;
-          transition-delay: 200ms;
+  -webkit-transition: 400ms opacity ease-in-out;
+  transition: 400ms opacity ease-in-out;
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);

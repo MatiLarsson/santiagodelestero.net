@@ -23,7 +23,7 @@ buttons1.forEach(button => {
     });
 });
 
-// Swiper
+// Swiper Carousel "que hacer en Santiago"
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -41,18 +41,18 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
         768: {
           slidesPerView: 2,
-          slidesPerGroup: 2,
-          spaceBetween: 10,
+          slidesPerGroup: 1,
+          spaceBetween: 0,
         },
         1280: {
           slidesPerView: 3,
-          slidesPerGroup: 3,
-          spaceBetween: 20,
+          slidesPerGroup: 1,
+          spaceBetween: 0,
         },
         1920: {
           slidesPerView: 4,
-          slidesPerGroup: 4,
-          spaceBetween: 30,
+          slidesPerGroup: 1,
+          spaceBetween: 0,
         },
     }
 });
