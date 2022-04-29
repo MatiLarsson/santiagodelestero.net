@@ -1033,6 +1033,24 @@ footer .footer--container .copyright p span {
   font-family: "Holden";
 }
 
+@media (min-width: 768px) {
+  .tituloTurismo h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tituloTurismo h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .tituloTurismo h2 {
+    font-size: 2.5rem;
+  }
+}
+
 .mainLugares img {
   width: 100vw;
 }
