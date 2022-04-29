@@ -168,10 +168,11 @@ header {
     .header-logo {
       img {
         width: 25%;
-        margin-left: 2rem;
+        margin-left: 300px;
       }
     }
     nav {
+      padding: 0 300px;
       h4 {
         font-size: $fs-xl;
       }
