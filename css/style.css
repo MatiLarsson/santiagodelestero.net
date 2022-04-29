@@ -662,6 +662,24 @@ footer .footer--container .copyright p span {
   color: #FF6600;
 }
 
+@media screen and (min-width: 768px) {
+  .instagram .instagramLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .instagram .instagramLink p {
+    margin: 1.5rem 0.5rem;
+  }
+  .instagram .instagramLink p a {
+    font-size: 1.4rem;
+  }
+}
+
 .instagram .instaFeedMobile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,6 +945,12 @@ footer .footer--container .copyright p span {
 
 .spotify iframe {
   width: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .spotify iframe {
+    width: 640px;
+  }
 }
 
 @media (min-width: 768px) {
