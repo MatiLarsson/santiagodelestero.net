@@ -93,5 +93,22 @@ footer {
         }
       }
     }
+    @media screen and (min-width: 1280px) {
+      display: grid;
+      height: 150px;
+      grid-template-areas: "links devs media";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      .socialMediaIconsList {
+        grid-area: media;
+        width: 90%;
+      }
+      .interestLinks {
+        grid-area: links;
+      }
+      .copyright {
+        grid-area: devs;
+      }
+    }
   }
 }
