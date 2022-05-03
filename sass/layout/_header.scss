@@ -10,6 +10,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     img {
       width: 80%;
     }
@@ -102,6 +103,7 @@ header {
     nav {
       padding: 0 1rem;
       justify-content: space-between;
+      overflow: hidden;
       h4 {
         font-size: $fs-md;
       }
@@ -126,9 +128,7 @@ header {
             text-decoration: none;
             color: $color-5;
             &:hover {
-              border-radius: $br-5;
-              background-color: $color-5;
-              color: $color-1;
+              color: gold;
             }
           }
         }

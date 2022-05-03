@@ -69,6 +69,7 @@
      width: 70vw;
     }
     p {
+      font-size: $fs-sm;
       width: 70vw;
     }
     h5 {
@@ -97,22 +98,22 @@
       margin-bottom: 2rem;
     }
     h4 {
-     width: 55vw;
+     width: 65vw;
      font-size: $fs-xl;
     }
     p {
-      font-size: $fs-lg;
-      width: 55vw;
+      font-size: $fs-sm;
+      width: 65vw;
     }
     h5 {
-      width: 55vw;
+      width: 65vw;
       font-size: $fs-lg;
     }
     div {
-      width: 55vw;
+      width: 65vw;
       button {
         a{
-          font-size: $fs-lg;
+          font-size: $fs-md;
         }
       }
     }

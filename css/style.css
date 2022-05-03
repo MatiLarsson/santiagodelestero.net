@@ -74,6 +74,7 @@ header .header-logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 header .header-logo img {
@@ -213,6 +214,7 @@ header .show {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    overflow: hidden;
   }
   header nav h4 {
     font-size: 1rem;
@@ -256,9 +258,7 @@ header .show {
     color: #FFF;
   }
   header nav .navBarPc li a:hover {
-    border-radius: 5px;
-    background-color: #FFF;
-    color: #252525;
+    color: gold;
   }
 }
 
@@ -1129,6 +1129,7 @@ footer .footer--container .copyright p span {
     width: 70vw;
   }
   .mainLugares p {
+    font-size: 0.8rem;
     width: 70vw;
   }
   .mainLugares h5 {
@@ -1162,22 +1163,22 @@ footer .footer--container .copyright p span {
     margin-bottom: 2rem;
   }
   .mainLugares h4 {
-    width: 55vw;
+    width: 65vw;
     font-size: 1.6rem;
   }
   .mainLugares p {
-    font-size: 1.4rem;
-    width: 55vw;
+    font-size: 0.8rem;
+    width: 65vw;
   }
   .mainLugares h5 {
-    width: 55vw;
+    width: 65vw;
     font-size: 1.4rem;
   }
   .mainLugares div {
-    width: 55vw;
+    width: 65vw;
   }
   .mainLugares div button a {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }
 
