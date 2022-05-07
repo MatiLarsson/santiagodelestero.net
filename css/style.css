@@ -1045,12 +1045,6 @@ footer .footer--container .copyright p span {
   }
 }
 
-@media (min-width: 1600px) {
-  .tituloTurismo h2 {
-    font-size: 2.5rem;
-  }
-}
-
 .mainLugares img {
   width: 100vw;
 }
@@ -1095,7 +1089,7 @@ footer .footer--container .copyright p span {
     font-size: 1.6rem;
   }
   .mainLugares p {
-    padding: 0rem 2rem;
+    padding: .4rem 2rem;
     font-size: 1rem;
   }
   .mainLugares h5 {
@@ -1172,7 +1166,6 @@ footer .footer--container .copyright p span {
   }
   .mainLugares h5 {
     width: 65vw;
-    font-size: 1.4rem;
   }
   .mainLugares div {
     width: 65vw;
