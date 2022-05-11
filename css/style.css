@@ -1045,6 +1045,7 @@ footer .footer--container .copyright p span {
 }
 
 .mainLugares img {
+  padding-top: 1em;
   width: 100vw;
 }
 
