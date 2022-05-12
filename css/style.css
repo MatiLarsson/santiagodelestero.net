@@ -191,7 +191,7 @@ header #turismo-dropdown .socialMediaSideBar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 header #turismo-dropdown .socialMediaSideBar a img {
@@ -269,7 +269,7 @@ header .show {
             justify-content: flex-start;
   }
   header .header-logo img {
-    width: 40%;
+    width: 30%;
     margin-left: 1rem;
   }
   header .header-logo h4 {
